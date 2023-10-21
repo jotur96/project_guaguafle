@@ -1,32 +1,39 @@
 /* FILEPATH: /home/julio/workspace/uaa/idpw/project/project_web_cofee/styles/index.css */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* Estilos para el cuerpo de la página */
 html body {
     height: 100%;
-    margin: 0;
+    margin: 0;  
+    display: flex;
+    flex-direction: column;
 }
 
 /* Estilos para el encabezado */
 header {
-    background-color: #333;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #8d8d8d;
     color: #fff;
     padding: 20px;
-} */
+} 
 
 
-/* Estilos para el contenido principal */
+/* Estilos para el contenido principal
 main {
-    flex: 1;
     padding: 20px;
     max-width: max-content;
     width: max-content;
     height: max-content;
-}
+} */
 
-.wrapper{
-    height: 200px;
+section {
+    /* display: flex; */
+    height: 76.4vh;
     /* height: 100%; */
-    width: 100%;
+    /* width: 100%; */
     background-color: powderblue;
 }
 
@@ -35,5 +42,20 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
+    bottom: 0;
+
     text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 40px;
+    font-size: 20px;
 }
