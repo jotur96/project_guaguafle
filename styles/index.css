@@ -2,48 +2,43 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* Estilos para el cuerpo de la página */
-html body {
-    height: auto;
-    width: auto;
-    margin: 0;  
+/* body {
     display: flex;
     flex-direction: column;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estilos para el encabezado */
-header {
+.header {
+    width: 100vw;
+    height: 10vh;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
     background-color: #8d8d8d;
     color: #fff;
-    padding: 1rem;
 } 
 
 
-/* Estilos para el contenido principal
-main {
-    padding: 20px;
-    max-width: max-content;
-    width: max-content;
-    height: max-content;
-} */
-
-section {
-    /* display: flex; */
-    height: 76.4vh;
-    /* height: 100%; */
-    /* width: 100%; */
-    background-color: powderblue;
+.main {
+    height: 80vh;
 }
 
-/* Estilos para el pie de página */
-footer {
+
+.footer {
+    /* width: 100vw; */
+    height: 10vh;
     background-color: #333;
     color: #fff;
-    padding: 1rem;
-    bottom: 0;
+    /* padding: 1rem; */
+    /* bottom: 0; */
+
     text-align: center;
 }
 
@@ -69,6 +64,6 @@ footer {
     box-shadow: 0 0 2rem 1rem rgba(0, 191, 255, 0.5);
   }
 
-  a:hover{
+a:hover{
     box-shadow: 0 0 2rem 1rem rgba(0, 191, 255, 0.5);
   }
