@@ -23,5 +23,5 @@ export const AppRoutes = () => {
             element: <Inicio />
         }
     ])
-
+    return routes
 }
