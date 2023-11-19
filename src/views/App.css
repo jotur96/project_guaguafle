@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'TabernaSerif';
+    src: url('../assets/TabernaSerif-Regular.otf') format('opentype');
+  }
+
+
+  :root {
+    font-family: 'TabernaSerif', sans-serif;
+  }

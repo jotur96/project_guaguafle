@@ -1,9 +1,10 @@
+import { Layout } from "../../components/Layout"
 
 
 export const Nosotros = () => {
     return (
-        <div>
+        <Layout>
             <h1>Nosotros</h1>
-        </div>
+        </Layout>
     )
 }
