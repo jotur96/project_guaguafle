@@ -59,7 +59,7 @@ export const Nav = () => {
   };
 
   return (
-    <nav className="flex justify-between items-end z-10 w-full top-0 py-5 px-8 text-xl font-dark bg-red-500">
+    <nav className="flex justify-between items-end z-10 w-full top-0 py-5 px-8 text-xl font-dark bg-guaflePrimary">
       
       <MobileMenuToggle onToggle={toggleMobileMenu} />
       <MobileMenuContent isOpen={isMobileMenuOpen} onClose={closeMobileMenu} />
