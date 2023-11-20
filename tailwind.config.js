@@ -9,6 +9,7 @@ export default {
       colors: {
         guaflePrimary: '#FF3B00',
         guafleSecondary: '#FAEFDF',
+        guaflePink: '#FF87B9'
       }
     },
   },
