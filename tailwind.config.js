@@ -10,7 +10,10 @@ export default {
         guaflePrimary: '#FF3B00',
         guafleSecondary: '#FAEFDF',
         guaflePink: '#FF87B9'
-      }
+      },
+      borderRadius: {
+        'bordeado-ig': '10px', // Define tu radio de esquina personalizado
+      },
     },
   },
   plugins: [],
