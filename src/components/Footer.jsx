@@ -9,38 +9,37 @@ import { FaTwitter } from "react-icons/fa";
 
 export const Footer = () => {
     return (
-        <footer className="flex col justify-between bg-guaflePrimary w-full">
-            <div className="flex col justify-evenly w-full p-20">
-                <ul className="flex flex-col gap-6 items-center">
-                    
-                    <li className="flex items-center">
-                    <h2 className="text-4xl">Contacto</h2>
-                    </li>
-                    <li className="flex flex-col justify-center items-center gap-2">
-                        <h4 className="text-2xl">Telefono</h4>
-                        <p>123456789</p>
-                    </li>
-                    {/* <img className="w-40 h-40 object-cover rounded-lg " src={personaj1} alt="" /> */}
-                    <li className="flex flex-col justify-center items-center gap-2">
-                        <h4 className="text-2xl">Direccion</h4>
-                        {/* <img className="w-16 h-16 object-cover rounded-lg " src={personaj1} alt="" /> */}
-                        <a href="https://maps.app.goo.gl/yWUjEyucCQJEBXiP6">Teniente Vera 2737 Esq, Asunción 001409</a>
-                    </li>
-                    <li className='flex gap-6 mt-10'>
-                        <FaFacebook className="text-4xl"/>
-                        <FaInstagram className="text-4xl"/>
-                        <FaWhatsapp className="text-4xl"/>
-                        <FaTiktok className="text-4xl"/>
-                        <FaTwitter className="text-4xl"/>
+        <footer className="flex bg-guaflePrimary w-full min-h-full">
+            <div className="flex flex-col w-full md:flex-row">
+                <div className="md:pt-20 md:pl-20 pt-10">
+                    <div className="flex flex-col items-center">
+                        <div className="flex items-center">
+                            <h2 className="text-4xl">Contacto</h2>
+                        </div>
+                        <div className="flex flex-col justify-center items-center gap-2">
+                            <h4 className="text-2xl">Telefono</h4>
+                            <p>123456789</p>
+                        </div>
+                        <div className="flex flex-col justify-center items-center gap-2 px-2">
+                            <h4 className="text-2xl">Direccion</h4>
+                            <a href="https://maps.app.goo.gl/yWUjEyucCQJEBXiP6" className="whitespace-nowrap hover:text-guafleSecondary">Teniente Vera 2737 Esq, Asunción 001409</a>
+                        </div>
+                    </div>
+                    <div className='flex mx-auto justify-evenly pt-10 pb-5 md:pt-5'>
+                        <FaFacebook className="text-4xl hover:text-guafleSecondary" />
+                        <FaInstagram className="text-4xl hover:text-guafleSecondary" />
+                        <FaWhatsapp className="text-4xl hover:text-guafleSecondary" />
+                        <FaTiktok className="text-4xl hover:text-guafleSecondary" />
+                        <FaTwitter className="text-4xl hover:text-guafleSecondary" />
 
-                    </li>
-                </ul>
-                <ul className="flex flex-col gap-6">
-                    <li ><iframe className="rounded-3xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.3695943561415!2d-57.561572523645566!3d-25.291783677650233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da9862b5dfa21%3A0x4fc9830f71ff6260!2sGuaguafle!5e0!3m2!1ses-419!2spy!4v1700443064039!5m2!1ses-419!2spy" width="500" height="350" loading="lazy" ></iframe></li>
-                </ul>
+                    </div>
+                </div>
+                <div className="flex justify-center py-10 mx-auto w-full md:w-2/4">
+                    <iframe className="rounded-3xl w-96 h-80 md:w-full md:h-80" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.3695943561415!2d-57.561572523645566!3d-25.291783677650233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da9862b5dfa21%3A0x4fc9830f71ff6260!2sGuaguafle!5e0!3m2!1ses-419!2spy!4v1700443064039!5m2!1ses-419!2spy"></iframe>
+                </div>
 
             </div>
-            
+
 
         </footer>
     )
