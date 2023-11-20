@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        guaflePrimary: '#FF3B00',
+        guafleSecondary: '#FAEFDF',
+      }
+    },
   },
   plugins: [],
 }
