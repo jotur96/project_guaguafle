@@ -61,7 +61,7 @@ export const Menu = () => {
                 </div>
                 <div className="flex flex-col justify-evenly items-center md:flex-row  w-full h-full">
                     <div className=" md:m-10">    
-                        <Carousel loop={true} className="mt-5 mb-5 md:w-700 rounded-3xl">
+                        <Carousel loop={true} autoplay={true} autoplayDelay={3000} className="mt-5 mb-5 md:w-700 rounded-3xl">
                             {images.map((image) => (
                                 <CarouselItems key={image.id} img={image.img} alt={image.alt} />
                             ))}
