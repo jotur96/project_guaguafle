@@ -27,19 +27,19 @@ export const Footer = () => {
                     </div>
                     <div className='flex mx-auto justify-evenly pt-10 pb-5 md:pt-5'>
                         <a href="https://facebook.com" target="_blank">
-                        <FaFacebook className="text-4xl  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-600 cursor-pointer" />
+                        <FaFacebook className="text-4xl  transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-600 cursor-pointer" />
                         </a>
                         <a href="https://instagram.com" target="_blank">
-                        <FaInstagram className="text-4xl hover:text-white from-orange-400 via-red-500 to-purple-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:bg-gradient-to-br rounded-bordeado-ig cursor-pointer" />
+                        <FaInstagram className="text-4xl hover:text-white from-orange-400 via-red-500 to-purple-800 transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110  duration-300 hover:bg-gradient-to-br rounded-bordeado-ig cursor-pointer" />
                         </a>
                         <a href="https://wa.me/595971167440" target="_blank">
-                        <FaWhatsapp className="text-4xl  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-green-500 cursor-pointer" />
+                        <FaWhatsapp className="text-4xl  transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-green-500 cursor-pointer" />
                         </a>
                         <a href="https://tiktok.com" target="_blank">
-                        <FaTiktok className="text-4xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-black cursor-pointer" />
+                        <FaTiktok className="text-4xl transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-white cursor-pointer" />
                         </a>
                         <a href="https://x.com" target="_blank">
-                        <FaTwitter className="text-4xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-500 cursor-pointer" />
+                        <FaTwitter className="text-4xl transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-500 cursor-pointer" />
                         </a>
 
                     </div>
