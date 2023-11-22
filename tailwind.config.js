@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        guaflePrimary: '#FF3B00',
+        guaflePrimary: '#FFAA6D',
         guafleSecondary: '#FAEFDF',
         guaflePink: '#FF87B9'
       },
