@@ -4,8 +4,8 @@ import { Layout } from "../../components/Layout";
 import img1 from "../../assets/images/menu-images/elegi-tu-masa-guafle.jpg"
 import img2 from "../../assets/images/menu-images/elegi-tus-sabores.jpg"
 import img3 from "../../assets/images/menu-images/elegi-tus-toppings.jpg"
-import img4 from "../../assets/images/menu-images/elegi-tu-masa-guafle.jpg"
-import menu from "../../assets/images/menu-images/menu-guaguafle.jpg"
+import menu1 from "../../assets/images/menu-images/arma-tu-guafle.jpg"
+import menu2 from "../../assets/images/menu-images/menu-guaguafle.jpg"
 
 
 
@@ -41,7 +41,12 @@ export const Menu = () => {
     const menuImages = [
         {
             id: 1,
-            img: menu,
+            img: menu1,
+            alt: "Menu"
+        },
+        {
+            id: 2,
+            img: menu2,
             alt: "Menu"
         }
     ]
@@ -63,9 +68,11 @@ export const Menu = () => {
                         </Carousel>
                     </div>
                     <div className="md:m-10 md:w-700 ">
-                        {menuImages.map((menuImage) => (
-                            <MenuItems key={menuImage.id} img={menuImage.img} alt={menuImage.alt}  />
-                        ))}
+                        <Carousel loop={true} className="mt-5 mb-5 md:w-700 rounded-3xl">
+                            {menuImages.map((image) => (
+                                <CarouselItems key={image.id} img={image.img} alt={image.alt} />
+                            ))}
+                        </Carousel>
                     </div>
                 </div>
 
