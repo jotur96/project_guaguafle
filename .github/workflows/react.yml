@@ -26,5 +26,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm i
+    - run: rm -r dist
     - run: npm run build
+    - run: rm -r /var/www/html/guaguafle.prod/*
     - run: cp -rf dist/* /var/www/html/guaguafle.prod
