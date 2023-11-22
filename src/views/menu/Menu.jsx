@@ -36,11 +36,6 @@ export const Menu = () => {
             img: img3,
             alt: "Elegí tus toppings"
         },
-        {
-            id: 4,
-            img: img4,
-            alt: "Elegí tu masa"
-        }
     ]
 
     const menuImages = [
