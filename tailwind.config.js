@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+export default withMT( {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -9,13 +12,20 @@ export default {
       colors: {
         guaflePrimary: '#FFAA6D',
         guafleSecondary: '#FAEFDF',
-        guaflePink: '#FF87B9'
+        guaflePink: '#FF87B9',
+        guafleOrange: '#FF3B00',
       },
       borderRadius: {
         'bordeado-ig': '10px', // Define tu radio de esquina personalizado
       },
+      width: {
+        '700': '700px',
+      },
+      height: {
+        '600': '600px',
+      },
     },
   },
   plugins: [],
-}
+})
 
