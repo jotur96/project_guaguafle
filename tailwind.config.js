@@ -23,6 +23,7 @@ export default withMT( {
       },
       height: {
         '600': '600px',
+        'screen-50': '50vh',
       },
     },
   },
