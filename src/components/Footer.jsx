@@ -9,7 +9,7 @@ import { FaTwitter } from "react-icons/fa";
 
 export const Footer = () => {
     return (
-        <footer className="flex bg-guaflePrimary w-full">
+        <footer className="flex bg-guaflePrimary w-full absolute">
             <div className="flex flex-col w-full md:flex-row">
                 <div className="md:pt-20 md:pl-36 pt-10">
                     <div className="flex flex-col items-center">
