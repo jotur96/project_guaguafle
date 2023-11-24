@@ -109,7 +109,7 @@ export const Menu = () => {
                     <section className="flex md:flex-row flex-col-reverse w-full h-screen items-center justify-center md:mt-0 my-20 mb-10">
                         <div className="flex flex-col items-center justify-around w-full md:w-1/2 h-1/2 md:h-full opacity-95">
                             <div className="flex items-center justify-center w-full h-1/4">
-                            <p className="text-4xl md:text-6xl opacity-100 text-center mx-10">
+                            <p className="text-2xl md:text-6xl opacity-100 text-center mx-10">
                                 Los Waffles mas destacados!!
                             </p>
                             </div>
