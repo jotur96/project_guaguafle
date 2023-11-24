@@ -10,9 +10,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Nav />
-        <AppRoutes />
-        <Footer />
+        <div className='relative w-full h-full'>
+          <Nav />
+          <AppRoutes />
+          <Footer />
+        </div >
       </BrowserRouter>
     </>
   )

@@ -2,6 +2,7 @@ import { Layout } from "../../components/Layout";
 
 import img1 from "../../assets/images/personaje1.png";
 import img2 from "../../assets/images/personaje2.png";
+import img3 from "../../assets/images/personaje3.png";
 
 
 export const Nosotros = () => {
@@ -11,9 +12,9 @@ export const Nosotros = () => {
     return (
         <Layout>
             <div className="relative h-full w-full">
-                <img className="fixed top-0 w-full h-full object-cover" src={background} alt="Background" />
+                <img className="fixed w-full h-full object-cover" src={background} alt="Background" />
                 <section className="flex flex-col md:flex-row items-center justify-center md:h-screen-50 h-screen">
-                    <div className="md:w-1/2 md:h-full h-1/2 w-full bg-guafleOrange opacity-75 md:mt-10 mt-28">
+                    <div className="md:w-1/2 md:h-full h-1/2 w-full bg-guafleOrange opacity-75">
                         <img className="w-full h-full object-contain opacity-100" src={img1} alt="Background" />
                     </div>
                     <div className="flex flex-col items-center justify-around md:w-1/2 md:h-full h-1/2 w-full md:pb-20 pb-14 bg-guafleSecondary opacity-95">
@@ -42,7 +43,7 @@ export const Nosotros = () => {
                         </p>
                     </div>
                     <div className="md:w-1/2 md:h-full h-1/2 w-full bg-guafleOrange opacity-75">
-                        <img className="w-full h-full object-contain" src={img2} alt="Background" />
+                        <img className="w-full h-full object-contain" src={img3} alt="Background" />
                     </div>
                 </section>
             </div>
