@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Navbar, Collapse, Typography, IconButton } from "@material-tailwind/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const NavItem = ({ to, children, onClick }) => {
   const activeStyle = 'underline underline-offset-4 font-semibold';
   return (
-    <li className="">
+    <li className="flex items-center text-black hover:text-guafleSecondary lg:text-4xl px-5">
       <NavLink
         to={to}
         onClick={onClick}
@@ -16,57 +18,55 @@ const NavItem = ({ to, children, onClick }) => {
 };
 
 
-const MobileMenuToggle = ({ onToggle }) => {
+function NavList() {
   return (
-    <div className="lg:hidden">
-      <button onClick={onToggle} className="text-black focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-        </svg>
-      </button>
-    </div>
+    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 px-5">
+      <NavItem to='/'>Inicio</NavItem>
+      <NavItem to='/menu'>Menú</NavItem>
+      <NavItem to='/nosotros'>Nosotros</NavItem>
+    </ul>
   );
-};
+}
 
-const MobileMenuContent = ({ isOpen, onClose }) => {
-  return (
-      <div className={`fixed top-0 left-0 w-full h-50 bg-guaflePrimary flex flex-col items-center p-8 ${isOpen ? 'block' : 'hidden'}`}>
-      <button onClick={onClose} className="text-black focus:outline-none">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-          </svg>
-        </button>
-        <NavItem to='/' onClick={onClose}>Inicio</NavItem>
-        <NavItem to='/menu' onClick={onClose}>Menú</NavItem>
-        <NavItem to='/nosotros' onClick={onClose}>Nosotros</NavItem>
-      </div>
-  );
-};
+export function Nav() {
+  const [openNav, setOpenNav] = React.useState(false);
 
-export const Nav = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const handleWindowResize = () =>
+    window.innerWidth >= 960 && setOpenNav(false);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  React.useEffect(() => {
+    window.addEventListener("resize", handleWindowResize);
 
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-  };
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   return (
-    <nav className="flex justify-between items-end fixed z-10 w-full top-0 py-5 px-8 text-2xl font-dark bg-guaflePrimary">
-      
-      <MobileMenuToggle onToggle={toggleMobileMenu} />
-      <MobileMenuContent isOpen={isMobileMenuOpen} onClose={closeMobileMenu} />
-      <div className="lg:flex sm:hidden">
-        <ul className="space-x-36 items-end lg:flex sm:hidden md:hidden">
-          <NavItem to='/' onClick={closeMobileMenu}>Inicio</NavItem>
-          <NavItem to='/menu' onClick={closeMobileMenu}>Menú</NavItem>
-          <NavItem to='/nosotros' onClick={closeMobileMenu}>Nosotros</NavItem>
-        </ul>
-      </div>
-      
-    </nav>
+      <Navbar className="mx-auto max-w-screen-x bg-guaflePrimary py-0" fullWidth="true" color="guafleOrange">
+        <div className="flex items-center justify-between text-white">
+          {/* Logo con imagen */}
+            <img className="h-40 w-40 object-cover object-center py-0"
+            src="../../recursos/Guaguafle Entregables/Logo/RGB/PNG RGB/guaguafle-logo.png" alt="Logo"/>
+          <div className="hidden lg:block">
+            <NavList />
+          </div>
+          <IconButton
+            variant="text"
+            className="ml-auto h-6 w-6 text-white hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            ripple={false}
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+            ) : (
+              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+            )}
+          </IconButton>
+        </div>
+        <Collapse open={openNav}>
+          <NavList />
+        </Collapse>
+      </Navbar>
   );
-};
+}
