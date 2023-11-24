@@ -12,15 +12,15 @@ import menu2 from "../../assets/images/menu-images/menu-guaguafle.jpg"
 export const Menu = () => {
 
 
-    const CarouselItems = ({ img,  alt }) => {
-        return <img src={img} alt={alt}></img>
+    const CarouselItems = ({ img, alt }) => {
+        return <img src={img} alt={alt} className=" w-full h-full rounded-3xl"></img>
     }
 
     const MenuItems = ({ img, alt }) => {
         return <img src={img} alt={alt} className="rounded-3xl"></img>
     }
 
-    const images = [ 
+    const images = [
         {
             id: 1,
             img: img1,
@@ -51,31 +51,86 @@ export const Menu = () => {
         }
     ]
 
+    const imagesIg = [
+        {
+            id: 1,
+            img: "https://scontent.cdninstagram.com/v/t39.30808-6/402648118_305086659049869_1631573336250979745_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08&_nc_ht=scontent.cdninstagram.com&_nc_cat=109&_nc_ohc=5iXHDPmnPgAAX_RyiHo&edm=APs17CUAAAAA&ccb=7-5&oh=00_AfB3NrV2w6y_lBBxIn2_d5GprXto4TdFm5tLDV3Hluotaw&oe=6565936D&_nc_sid=10d13b",
+            alt:"Guafles"
+        },
+        {
+            id: 2,
+            img: "https://scontent.cdninstagram.com/v/t39.30808-6/385502631_281216221436913_8145499822544321553_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08&_nc_ht=scontent.cdninstagram.com&_nc_cat=109&_nc_ohc=C6QM-UXilVoAX98QM1R&edm=APs17CUAAAAA&ccb=7-5&oh=00_AfAJrXIF9ah31PtpFRp6npZZ3hrdLEJuoaSZPrvXJR5ffg&oe=6564AC1A&_nc_sid=10d13b",
+            alt:"Guafles"
+        },
+        {
+            id: 3,
+            img: "https://instagram.fasu3-1.fna.fbcdn.net/v/t39.30808-6/376840028_268954202663115_3124706802048995142_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4yMDAweDIwMDAuc2RyIn0&_nc_ht=instagram.fasu3-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=yQCXXKDC2EkAX-Ad-So&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzE4OTUyMzEyNzQxMDczOTIzNw%3D%3D.2-ccb7-5&oh=00_AfCr_mfqH5yCSTw8xi04cFfhi3qr5H3Mj1EenYeXlzciWA&oe=6563F136&_nc_sid=b41fef",
+            alt:"Guafles"
+        },
+        {
+            id: 4,
+            img: "https://instagram.fasu3-1.fna.fbcdn.net/v/t39.30808-6/361656899_17893834712840524_8085700217199640029_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDAweDEwMDAuc2RyIn0&_nc_ht=instagram.fasu3-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=biwIYQOp_Y8AX_rsCTO&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzE0OTY2NTYzNDU5MzIzMjE5OQ%3D%3D.2-ccb7-5&oh=00_AfAHIzgYkVdSORvk6k29Q1elcJnfzxcT96CnmJ-YaPYQVg&oe=6563DC1E&_nc_sid=b41fef",
+            alt:"Guafles"
+        },
+        {
+            id: 5,
+            img: "https://instagram.fasu3-1.fna.fbcdn.net/v/t39.30808-6/365955084_17896491131840524_3474742778850007025_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyIn0&_nc_ht=instagram.fasu3-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=gAFhKNebbnwAX_cNgfP&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzE2MjgxNjI3ODQ5NzYxNTUyOA%3D%3D.2-ccb7-5&oh=00_AfDVlSoCduUPAblHGai_M5rn7v-Ytl0iyI-o2DODfvlNnQ&oe=65633D5F&_nc_sid=b41fef",
+            alt:"Guafles"
+        },
+    ]
+
+
+    const background = "https://scontent.cdninstagram.com/v/t39.30808-6/401503687_305085889049946_8132371084919703394_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08&_nc_ht=scontent.cdninstagram.com&_nc_cat=106&_nc_ohc=8gaCF4xCpy0AX_Mqtcs&edm=APs17CUAAAAA&ccb=7-5&oh=00_AfDcqHzDWUyDIRDvVV2T0ykQG6HJmF2bj_5QO2-qPrJ6sQ&oe=6563ADC0&_nc_sid=10d13b"
+
 
     return (
         <Layout>
-            <div className="flex flex-col items-center bg-slate-600 w-full h-full my-16 mx-1">
-                <div className="flex flex-col items-center">
-                    <h1 className="text-6xl text-guafleOrange">Menu</h1>
-                    <h2 className="text-3xl text-guafleOrange pt-8"> Armá tu propio Wafle!! </h2>
-                </div>
-                <div className="flex flex-col justify-evenly items-center md:flex-row  w-full h-full">
-                    <div className=" md:m-10">    
-                        <Carousel loop={true} autoplay={true} autoplayDelay={3000} className="mt-5 mb-5 md:w-700 rounded-3xl">
-                            {images.map((image) => (
-                                <CarouselItems key={image.id} img={image.img} alt={image.alt} />
-                            ))}
-                        </Carousel>
-                    </div>
-                    <div className="md:m-10 md:w-700 ">
-                        <Carousel loop={true} className="mt-5 mb-5 md:w-700 rounded-3xl">
-                            {menuImages.map((image) => (
-                                <CarouselItems key={image.id} img={image.img} alt={image.alt} />
-                            ))}
-                        </Carousel>
-                    </div>
-                </div>
+            <div className="flex flex-col h-full w-full">
+                <img className="fixed w-full h-full object-cover opacity-40" src={background} alt="Background" />
+                <div className="md:mx-10 md:my-10 my-5 mx-5 mb-20">
+                    <section className="flex md:flex-row flex-col-reverse w-full md:h-screen-50 h-screen items-center justify-center">
+                        <div className="flex items-center justify-center w-full md:w-1/2 h-1/2 md:h-full md:px-36 rounded-3xl">
+                            <Carousel loop={true} autoplay={true} autoplayDelay={5000} className="">
+                                {images.map((image) => (
+                                    <CarouselItems key={image.id} img={image.img} alt={image.alt} />
+                                ))}
+                            </Carousel>
+                        </div>
+                        <div className="flex items-center justify-center w-full md:w-1/2 h-1/2 md:h-full opacity-95 ">
+                            <p className="text-4xl md:text-8xl opacity-100 text-center mx-10">
+                                Waffles Únicos! <br />
+                                Crea, <br />
+                                Combina, <br />
+                                Disfruta.
+                            </p>
+                        </div>
 
+                    </section>
+                    <section className="flex md:flex-row flex-col-reverse w-full h-screen items-center justify-center md:mt-0 my-20 mb-10">
+                        <div className="flex flex-col items-center justify-around w-full md:w-1/2 h-1/2 md:h-full opacity-95">
+                            <div className="flex items-center justify-center w-full h-1/4">
+                            <p className="text-4xl md:text-6xl opacity-100 text-center mx-10">
+                                Los Waffles mas destacados!!
+                            </p>
+                            </div>
+                            <div className=" w-full h-3/4 rounded-3xl md:pb-32 md:px-36">
+                            <Carousel loop={true} className="">
+                                {imagesIg.map((image) => (
+                                    <CarouselItems key={image.id} img={image.img} alt={image.alt} />
+                                ))}
+                            </Carousel>
+                            </div>
+
+                        </div>
+                        <div className="flex items-center justify-center w-full md:w-1/2 h-3/4 md:h-full md:py-10 md:px-10 ">
+                            <Carousel loop={true} className="mt-5 mb-5 md:w-700 rounded-3xl ">
+                                {menuImages.map((image) => (
+                                    <CarouselItems key={image.id} img={image.img} alt={image.alt} />
+                                ))}
+                            </Carousel>
+                        </div>
+                    </section>
+                </div>
             </div>
         </Layout>
     )
