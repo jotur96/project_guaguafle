@@ -17,29 +17,39 @@ export const Footer = () => {
                             <h2 className="text-4xl">Contacto</h2>
                         </div>
                         <div className="flex flex-col justify-center items-center gap-2">
-                            <h4 className="text-2xl">Telefono</h4>
+                            <h4 className="text-2xl">Teléfono</h4>
                             <p>123456789</p>
                         </div>
                         <div className="flex flex-col justify-center items-center gap-2 px-2">
-                            <h4 className="text-2xl">Direccion</h4>
+                            <h4 className="text-2xl">Dirección</h4>
                             <a href="https://maps.app.goo.gl/yWUjEyucCQJEBXiP6" className="whitespace-nowrap hover:text-guafleSecondary">Teniente Vera 2737 Esq, Asunción 001409</a>
                         </div>
                     </div>
                     <div className='flex mx-auto justify-evenly pt-10 pb-5 md:pt-5'>
                         <a href="https://facebook.com" target="_blank">
                         <FaFacebook className="text-4xl  transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-600 cursor-pointer" />
+                        <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                        <FaFacebook className="text-4xl  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-600 cursor-pointer" />
                         </a>
                         <a href="https://instagram.com" target="_blank">
                         <FaInstagram className="text-4xl hover:text-white from-orange-400 via-red-500 to-purple-800 transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110  duration-300 hover:bg-gradient-to-br rounded-bordeado-ig cursor-pointer" />
+                        <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                        <FaInstagram className="text-4xl hover:text-white from-orange-400 via-red-500 to-purple-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:bg-gradient-to-br rounded-bordeado-ig cursor-pointer" />
                         </a>
                         <a href="https://wa.me/595971167440" target="_blank">
                         <FaWhatsapp className="text-4xl  transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-green-500 cursor-pointer" />
+                        <a href="https://wa.me/595971167440" target="_blank" rel="noreferrer">
+                        <FaWhatsapp className="text-4xl  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-green-500 cursor-pointer" />
                         </a>
                         <a href="https://tiktok.com" target="_blank">
                         <FaTiktok className="text-4xl transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-white cursor-pointer" />
+                        <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+                        <FaTiktok className="text-4xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-black cursor-pointer" />
                         </a>
                         <a href="https://x.com" target="_blank">
                         <FaTwitter className="text-4xl transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-500 cursor-pointer" />
+                        <a href="https://x.com" target="_blank" rel="noreferrer">
+                        <FaTwitter className="text-4xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-500 cursor-pointer" />
                         </a>
 
                     </div>
