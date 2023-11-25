@@ -24,6 +24,7 @@ export default withMT({
       height: {
         '600': '600px',
         'screen-50': '50vh',
+        'screen-76': '76vh'
       },
     },
     screens: {

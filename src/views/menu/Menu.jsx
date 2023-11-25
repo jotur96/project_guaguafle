@@ -86,35 +86,34 @@ export const Menu = () => {
     return (
         <Layout>
             <div className="flex flex-col h-full w-full">
-                <img className="fixed w-full h-full object-cover opacity-40" src={background} alt="Background" />
-                <div className="2xl:mx-10 2xl:my-10 my-5 mx-5 mb-20">
-                    <section className="flex 2xl:flex-row flex-col-reverse w-full 2xl:h-screen-50 h-screen items-center justify-center">
-                        <div className="flex items-center justify-center w-full 2xl:w-1/2 h-1/2 2xl:h-full 2xl:px-36 rounded-3xl">
+                <img className="fixed w-full h-full object-cover opacity-40 z-0" src={background} alt="Background" />
+                <div className="h-full w-full">
+                    <section className="flex 2xl:flex-row flex-col-reverse w-full 2xl:h-fit h-screen items-center justify-center">
+                        <div className="flex items-center justify-center w-full 2xl:w-1/2 h-1/2 2xl:h-fit 2xl:px-36 z-10 bg-guafleSecondary 2xl:py-10">
                             <Carousel loop={true} autoplay={true} autoplayDelay={5000} className="">
                                 {images.map((image) => (
                                     <CarouselItems key={image.id} img={image.img} alt={image.alt} />
                                 ))}
                             </Carousel>
                         </div>
-                        <div className="flex items-center justify-center w-full 2xl:w-1/2 h-1/2 2xl:h-full opacity-95 ">
-                            <p className="text-4xl 2xl:text-7xl opacity-100 text-center mx-10">
+                        <div className="flex items-center justify-center 2xl:w-1/2 h-screen-76 opacity-100  z-10">
+                            <p className="text-4xl 2xl:text-7xl opacity-100 text-center ">
                                 Waffles Únicos! <br />
                                 Crea, <br />
                                 Combina, <br />
                                 Disfruta.
                             </p>
                         </div>
-
                     </section>
-                    <section className="flex 2xl:flex-row flex-col-reverse w-full h-screen items-center justify-center 2xl:mt-0 my-20 mb-10">
+                    <section className="flex 2xl:flex-row flex-col-reverse w-full h-screen items-center justify-center">
                         <div className="flex flex-col items-center justify-around w-full 2xl:w-1/2 h-1/2 2xl:h-full opacity-95">
                             <div className="flex items-center justify-center w-full h-1/4">
-                            <p className="text-2xl 2xl:text-6xl opacity-100 text-center mx-10">
+                            <p className="text-2xl 2xl:text-6xl opacity-100 text-center">
                                 Los Waffles mas destacados!!
                             </p>
                             </div>
-                            <div className=" w-full h-3/4 rounded-3xl 2xl:pb-32 2xl:px-36">
-                            <Carousel loop={true} className="">
+                            <div className=" w-full h-3/4 rounded-3xl 2xl:px-20 2xl:pb-20">
+                            <Carousel loop={true}>
                                 {imagesIg.map((image) => (
                                     <CarouselItems key={image.id} img={image.img} alt={image.alt} />
                                 ))}
@@ -122,8 +121,9 @@ export const Menu = () => {
                             </div>
 
                         </div>
-                        <div className="flex items-center justify-center w-full 2xl:w-1/2 h-3/4 2xl:h-full 2xl:py-10 2xl:px-10 ">
-                            <Carousel loop={true} className="mt-5 mb-5 2xl:w-700 rounded-3xl ">
+                        <div className="flex items-center justify-center w-full 2xl:w-1/2 h-full  2xl:px-10 bg-guafleSecondary z-10">
+                            
+                            <Carousel loop={true} className="2xl:w-700 rounded-3xl 2xl:h-fit">
                                 {menuImages.map((image) => (
                                     <CarouselItems key={image.id} img={image.img} alt={image.alt} />
                                 ))}
