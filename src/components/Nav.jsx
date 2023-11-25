@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Collapse, Typography, IconButton } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import logo from "../../recursos/Guaguafle Entregables/Logo/RGB/PNG RGB/guaguafle-logo.png"
 
 const NavItem = ({ to, children, onClick }) => {
   const activeStyle = 'underline underline-offset-4 font-semibold';
@@ -45,9 +46,9 @@ export function Nav() {
   return (
       <Navbar className="mx-auto max-w-screen-x bg-guaflePrimary py-0 fixed z-20" fullWidth="true" color="guafleOrange">
         <div className="flex items-center justify-between text-white">
-          {/* Logo con imagen */}
+          {/* Logo con imagen */} 
             <img className="h-40 w-40 object-cover object-center py-0"
-            src="../../recursos/Guaguafle Entregables/Logo/RGB/PNG RGB/guaguafle-logo.png" alt="Logo"/>
+            src={logo} alt="Logo"/>
           <div className="hidden lg:block">
             <NavList />
           </div>
