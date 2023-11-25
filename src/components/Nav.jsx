@@ -43,7 +43,7 @@ export function Nav() {
   }, []);
 
   return (
-      <Navbar className="mx-auto max-w-screen-x bg-guaflePrimary py-0" fullWidth="true" color="guafleOrange">
+      <Navbar className="mx-auto max-w-screen-x bg-guaflePrimary py-0 fixed z-20" fullWidth="true" color="guafleOrange">
         <div className="flex items-center justify-between text-white">
           {/* Logo con imagen */}
             <img className="h-40 w-40 object-cover object-center py-0"
