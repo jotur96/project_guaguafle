@@ -87,17 +87,17 @@ export const Menu = () => {
         <Layout>
             <div className="flex flex-col h-full w-full">
                 <img className="fixed w-full h-full object-cover opacity-40" src={background} alt="Background" />
-                <div className="md:mx-10 md:my-10 my-5 mx-5 mb-20">
-                    <section className="flex md:flex-row flex-col-reverse w-full md:h-screen-50 h-screen items-center justify-center">
-                        <div className="flex items-center justify-center w-full md:w-1/2 h-1/2 md:h-full md:px-36 rounded-3xl">
+                <div className="2xl:mx-10 2xl:my-10 my-5 mx-5 mb-20">
+                    <section className="flex 2xl:flex-row flex-col-reverse w-full 2xl:h-screen-50 h-screen items-center justify-center">
+                        <div className="flex items-center justify-center w-full 2xl:w-1/2 h-1/2 2xl:h-full 2xl:px-36 rounded-3xl">
                             <Carousel loop={true} autoplay={true} autoplayDelay={5000} className="">
                                 {images.map((image) => (
                                     <CarouselItems key={image.id} img={image.img} alt={image.alt} />
                                 ))}
                             </Carousel>
                         </div>
-                        <div className="flex items-center justify-center w-full md:w-1/2 h-1/2 md:h-full opacity-95 ">
-                            <p className="text-4xl md:text-8xl opacity-100 text-center mx-10">
+                        <div className="flex items-center justify-center w-full 2xl:w-1/2 h-1/2 2xl:h-full opacity-95 ">
+                            <p className="text-4xl 2xl:text-7xl opacity-100 text-center mx-10">
                                 Waffles Únicos! <br />
                                 Crea, <br />
                                 Combina, <br />
@@ -106,14 +106,14 @@ export const Menu = () => {
                         </div>
 
                     </section>
-                    <section className="flex md:flex-row flex-col-reverse w-full h-screen items-center justify-center md:mt-0 my-20 mb-10">
-                        <div className="flex flex-col items-center justify-around w-full md:w-1/2 h-1/2 md:h-full opacity-95">
+                    <section className="flex 2xl:flex-row flex-col-reverse w-full h-screen items-center justify-center 2xl:mt-0 my-20 mb-10">
+                        <div className="flex flex-col items-center justify-around w-full 2xl:w-1/2 h-1/2 2xl:h-full opacity-95">
                             <div className="flex items-center justify-center w-full h-1/4">
-                            <p className="text-2xl md:text-6xl opacity-100 text-center mx-10">
+                            <p className="text-2xl 2xl:text-6xl opacity-100 text-center mx-10">
                                 Los Waffles mas destacados!!
                             </p>
                             </div>
-                            <div className=" w-full h-3/4 rounded-3xl md:pb-32 md:px-36">
+                            <div className=" w-full h-3/4 rounded-3xl 2xl:pb-32 2xl:px-36">
                             <Carousel loop={true} className="">
                                 {imagesIg.map((image) => (
                                     <CarouselItems key={image.id} img={image.img} alt={image.alt} />
@@ -122,8 +122,8 @@ export const Menu = () => {
                             </div>
 
                         </div>
-                        <div className="flex items-center justify-center w-full md:w-1/2 h-3/4 md:h-full md:py-10 md:px-10 ">
-                            <Carousel loop={true} className="mt-5 mb-5 md:w-700 rounded-3xl ">
+                        <div className="flex items-center justify-center w-full 2xl:w-1/2 h-3/4 2xl:h-full 2xl:py-10 2xl:px-10 ">
+                            <Carousel loop={true} className="mt-5 mb-5 2xl:w-700 rounded-3xl ">
                                 {menuImages.map((image) => (
                                     <CarouselItems key={image.id} img={image.img} alt={image.alt} />
                                 ))}
