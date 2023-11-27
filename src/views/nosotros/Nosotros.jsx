@@ -19,7 +19,7 @@ export const Nosotros = () => {
                     <div className="h-screen-50 w-full z-10">
                         <img className="w-full h-full object-contain" src={img1} alt="Background" />
                     </div>
-                    <div className="flex flex-col  items-center h-fit w-fit bg-guafleSecondary z-10 px-20 md:px-24 xl:px-48 2xl:px-80 pb-10">
+                    <div className="flex flex-col  items-center h-fit w-fit bg-guafleSecondary z-10 px-10 md:px-24 xl:px-48 2xl:px-80 pb-10">
                         <h2 className="text-2xl md:text-5xl xl:text-6xl 2xl:text-8xl my-10 text-guafleOrange">Nuestra Historia</h2>
                         <p className="text-lg md:text-xl 2xl:text-3xl text-justify text-guafleOrange">
                             Esta es nuestra historia:
@@ -33,7 +33,7 @@ export const Nosotros = () => {
                     </div>
                 </section>
                 <section className="flex flex-col h-ful">
-                    <div className="flex flex-col items-center h-fit w-full bg-guafleSecondary z-10 px-20 md:px-24 xl:px-48 2xl:px-80 pb-10">
+                    <div className="flex flex-col items-center h-fit w-full bg-guafleSecondary z-10 px-10 md:px-24 xl:px-48 2xl:px-80 pb-10">
                         <h2 className="text-2xl text-center md:text-5xl lg:text-6xl 3xl:text-8xl my-10  text-guafleOrange">El nombre ¿De dónde viene?</h2>
                         <p className="text-lg md:text-xl 2xl:text-3xl text-justify text-guafleOrange">
                             En algunos lugares, Guagua, o La Guagua, es un transporte móvil, una pequeña especie de
