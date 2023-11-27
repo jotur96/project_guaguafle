@@ -11,15 +11,15 @@ export const Nosotros = () => {
 
     return (
         <Layout>
-            <div className="relative h-full w-full">
+            <div className="relative h-full w-full ">
                 <img className="fixed w-full h-full object-cover" src={background} alt="Background" />
-                <section className="flex flex-col md:flex-row items-center justify-center md:h-screen-50 h-screen">
-                    <div className="md:w-1/2 md:h-full h-1/2 w-full bg-guafleOrange opacity-75">
-                        <img className="w-full h-full object-contain opacity-100" src={img1} alt="Background" />
+                <section className="flex flex-col-reverse items-center justify-center h-full">
+                    <div className="h-screen-50 w-full z-10">
+                        <img className="w-full h-full object-contain" src={img1} alt="Background" />
                     </div>
-                    <div className="flex flex-col items-center justify-around md:w-1/2 md:h-full h-1/2 w-full md:pb-20 pb-14 bg-guafleSecondary opacity-95">
-                        <h2 className="md:h-1/2 md:text-7xl md:pt-32 pt-14 text-4xl text-guafleOrange">Nuestra Historia</h2>
-                        <p className="md:h-1/2 md:px-36 px-6 md:text-2xl text-justify break-words text-guafleOrange">
+                    <div className="flex flex-col  items-center h-fit w-fit bg-guafleSecondary z-10 px-20 md:px-24 xl:px-48 2xl:px-80 pb-10">
+                        <h2 className="text-2xl md:text-5xl xl:text-6xl 2xl:text-8xl my-10 text-guafleOrange">Nuestra Historia</h2>
+                        <p className="text-lg md:text-xl 2xl:text-3xl text-justify text-guafleOrange">
                             Esta es nuestra historia:
                             Nos gusta mucho movernos, ser un trotamundos girando
                             Venimos de todas partes, y en cada lugar descubrimos un sabor único
@@ -30,10 +30,10 @@ export const Nosotros = () => {
                         </p>
                     </div>
                 </section>
-                <section className="flex flex-col-reverse md:flex-row md:h-screen-50 h-screen">
-                    <div className="flex flex-col items-center md:w-1/2 md:h-full h-1/2 w-full bg-guafleSecondary opacity-95">
-                        <h2 className="md:h-1/2 md:text-5xl md:pt-32 pt-14 mb-2 text-2xl text-guafleOrange">El nombre ¿De dónde viene?</h2>
-                        <p className="md:h-1/2 md:px-36 px-6 md:text-2xl mb-32 text-justify text-guafleOrange">
+                <section className="flex flex-col h-ful">
+                    <div className="flex flex-col items-center h-fit w-full bg-guafleSecondary z-10 px-20 md:px-24 xl:px-48 2xl:px-80 pb-10">
+                        <h2 className="text-2xl text-center md:text-5xl lg:text-6xl 3xl:text-8xl my-10  text-guafleOrange">El nombre ¿De dónde viene?</h2>
+                        <p className="text-lg md:text-xl 2xl:text-3xl text-justify text-guafleOrange">
                             En algunos lugares, Guagua, o La Guagua, es un transporte móvil, una pequeña especie de
                             combi que te mueve a todos lados, su característica es esa, la de hacerte sentir que puedes
                             estar en varios lugares. También hay una relación con la niñez, los chicos pequeños, casi
@@ -42,8 +42,8 @@ export const Nosotros = () => {
                             GUAraní. El idioma que nos conecta a nuestra tierra, que trasciende y emociona.
                         </p>
                     </div>
-                    <div className="md:w-1/2 md:h-full h-1/2 w-full bg-guafleOrange opacity-75">
-                        <img className="w-full h-full object-contain" src={img3} alt="Background" />
+                    <div className="h-screen-50 w-full z-10 mb-70">
+                        <img className="w-full h-full object-contain opacity-100" src={img3} alt="Background" />
                     </div>
                 </section>
             </div>

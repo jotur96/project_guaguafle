@@ -6,7 +6,7 @@ import logoBlanco from "../assets/images/logo/blanco-sin-tag.png"
 import logoNegro from "../assets/images/logo/negro-sin-tag.png"
 
 const NavItem = ({ to, children }) => {
-  const activeStyle = 'underline underline-offset-4 font-semibold';
+  const activeStyle = 'underline underline-offset-8 font-semibold text-guafleSecondary hover:text-guafleOrange';
   return (
     <li className="flex items-center text-black hover:text-guafleSecondary lg:text-4xl px-5">
       <NavLink
