@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <div className='relative w-full h-full'>
           <Nav openNav={openNav} setOpenNav={setOpenNav} />
-          <div className={`transition-all duration-300 ${openNav ? 'mt-64 lg:mt-0' : ''}`}></div>
+          <div className={`transition-all duration-300 ${openNav ? 'mt-56' : ''}`}></div>
           <AppRoutes />
           <Footer />
         </div >
