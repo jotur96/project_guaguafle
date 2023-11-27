@@ -6,6 +6,7 @@ import img2 from "../../assets/images/menu-images/elegi-tus-sabores.jpg"
 import img3 from "../../assets/images/menu-images/elegi-tus-toppings.jpg"
 import menu1 from "../../assets/images/menu-images/arma-tu-guafle.jpg"
 import menu2 from "../../assets/images/menu-images/menu-guaguafle.jpg"
+import background from "../../assets/images/img/chocolate.png"
 
 
 
@@ -80,7 +81,7 @@ export const Menu = () => {
     ]
 
 
-    const background = "https://scontent.cdninstagram.com/v/t39.30808-6/401503687_305085889049946_8132371084919703394_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08&_nc_ht=scontent.cdninstagram.com&_nc_cat=106&_nc_ohc=8gaCF4xCpy0AX_Mqtcs&edm=APs17CUAAAAA&ccb=7-5&oh=00_AfDcqHzDWUyDIRDvVV2T0ykQG6HJmF2bj_5QO2-qPrJ6sQ&oe=6563ADC0&_nc_sid=10d13b"
+    // const background = "https://scontent.cdninstagram.com/v/t39.30808-6/401503687_305085889049946_8132371084919703394_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08&_nc_ht=scontent.cdninstagram.com&_nc_cat=106&_nc_ohc=8gaCF4xCpy0AX_Mqtcs&edm=APs17CUAAAAA&ccb=7-5&oh=00_AfDcqHzDWUyDIRDvVV2T0ykQG6HJmF2bj_5QO2-qPrJ6sQ&oe=6563ADC0&_nc_sid=10d13b"
 
 
     return (
@@ -149,7 +150,7 @@ export const Menu = () => {
         //                 <h1>Section 2.1</h1>
 
         //             </div>
-        //             <div className="flex items-center justify-center bg-guafleSecondaryh-full w-full opacity-95 z-10">
+        //             <div className="flex items-center justify-center bg-guafleSecondary-full w-full opacity-95 z-10">
 
         //                 <Carousel loop={true} className="rounded-3xl py-20">
         //                     {menuImages.map((image) => (
