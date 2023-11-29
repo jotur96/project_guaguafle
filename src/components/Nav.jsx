@@ -94,9 +94,9 @@ export const Nav = (props) => {
           }}
         >
           {openNav ? (
-            <XMarkIcon className="h-10 w-10" strokeWidth={2} />
+            <XMarkIcon className="ml-10 h-10 w-10" strokeWidth={2} />
           ) : (
-            <Bars3Icon className="h-10 w-10" strokeWidth={2} />
+            <Bars3Icon className="ml-10 h-10 w-10" strokeWidth={2} />
           )}
         </IconButton>
       </div>
