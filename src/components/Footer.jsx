@@ -25,6 +25,7 @@ export const Footer = () => {
                             <a href="https://maps.app.goo.gl/yWUjEyucCQJEBXiP6" className="whitespace-nowrap hover:text-guafleSecondary">Teniente Vera 2737 Esq, Asunción 001409</a>
                         </div>
                     </div>
+      
                     <div className='flex mx-auto justify-evenly pt-10 pb-5 :pt-5'>
                         <a href="https://facebook.com" target="_blank" rel="noreferrer">
                             <FaFacebook className="text-4xl  transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-600 cursor-pointer" />
@@ -39,7 +40,7 @@ export const Footer = () => {
                             <FaTiktok className="text-4xl transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-white cursor-pointer" />
                         </a>
                         <a href="https://x.com" target="_blank" rel="noreferrer">
-                            <FaTwitter className="text-4xl transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-500 cursor-pointer" />
+
                         </a>
 
                     </div>
