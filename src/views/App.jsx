@@ -7,11 +7,14 @@ import './App.css'
 
 function App() {
 
+  const [openNav, setOpenNav] = useState(false);
+
   return (
     <>
       <BrowserRouter>
         <div className='relative w-full h-full'>
-          <Nav />
+          <Nav openNav={openNav} setOpenNav={setOpenNav} />
+          <div className={`transition-all duration-300 ${openNav ? 'mt-56' : ''}`}></div>
           <AppRoutes />
           <Footer />
         </div >
