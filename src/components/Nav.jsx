@@ -6,9 +6,9 @@ import logoBlanco from "../assets/images/logo/blanco-sin-tag.png"
 import logoNegro from "../assets/images/logo/negro-sin-tag.png"
 
 const NavItem = ({ to, children }) => {
-  const activeStyle = 'underline underline-offset-8 font-semibold text-guafleSecondary hover:text-guafleOrange';
+  const activeStyle = "underline underline-offset-8 font-semibold text-guafleSecondary hover:no-underline"
   return (
-    <li className="flex items-center text-black hover:text-guafleSecondary lg:text-4xl px-5">
+    <li className="flex items-center text-black hover:text-guafleSecondary lg:text-4xl px-5 ">
       <NavLink
         to={to}
         onClick={() => {
@@ -28,6 +28,7 @@ function NavList() {
       <NavItem to='/'>Inicio</NavItem>
       <NavItem to='/menu'>Menú</NavItem>
       <NavItem to='/nosotros'>Nosotros</NavItem>
+      <NavItem to='/contacto'>Contacto</NavItem>
     </ul>
   );
 }
