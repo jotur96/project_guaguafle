@@ -28,6 +28,9 @@ export default withMT({
         'screen-60': '60vh',
         'screen-76': '76vh'
       },
+      boxShadow: {
+        'up': '0px -8px 10px -5px rgba(0, 0, 0, 0.15)',
+      },
     },
     screens: {
       'sm': '640px',
