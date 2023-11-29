@@ -14,6 +14,7 @@ export default withMT({
         guafleSecondary: '#FAEFDF',
         guaflePink: '#FF87B9',
         guafleOrange: '#FF3B00',
+        grisSuave: '#F5F5F5',
       },
       borderRadius: {
         'bordeado-ig': '10px', // Define tu radio de esquina personalizado
@@ -24,6 +25,7 @@ export default withMT({
       height: {
         '600': '600px',
         'screen-50': '50vh',
+        'screen-60': '60vh',
         'screen-76': '76vh'
       },
     },
@@ -45,6 +47,8 @@ export default withMT({
       '3xl': '1920px',
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 })
 

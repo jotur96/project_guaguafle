@@ -2,6 +2,7 @@ import { useRoutes } from "react-router-dom"
 import { Inicio } from "../views/inicio/Inicio"
 import { Nosotros } from "../views/nosotros/Nosotros"
 import { Menu } from "../views/menu/Menu"
+import { Contacto } from "../views/contacto/Contacto"
 
 
 export const AppRoutes = () => {
@@ -17,6 +18,10 @@ export const AppRoutes = () => {
         {
             path: '/nosotros',
             element: <Nosotros />
+        },
+        {
+            path: '/contacto',
+            element: <Contacto />
         },
         {
             path: '*',
