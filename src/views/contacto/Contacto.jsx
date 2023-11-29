@@ -9,21 +9,19 @@ export const Contacto = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        setNameError('');
+        setMessageError('');
 
         if (!name) {
             setNameError('Por favor, completa tu nombre');
             return;
-        } else {
-            setNameError('');
         }
 
         if (!message) {
             setMessageError('Por favor, escribe tu mensaje');
             return;
-        } else {
-            setMessageError('');
         }
-
+        
         const whatsappLink = `https://api.whatsapp.com/send?phone=595971167440&text=${encodeURIComponent(`Hola, mi nombre es ${name} y mi consulta es: ${message}`)}`;
 
         window.open(whatsappLink, '_blank');
@@ -32,19 +30,17 @@ export const Contacto = () => {
     const handleSendEmail = (event) => {
 
         event.preventDefault();
+        setNameError('');
+        setMessageError('');
 
         if (!name) {
             setNameError('Por favor, completa tu nombre');
             return;
-        } else {
-            setNameError('');
         }
 
         if (!message) {
             setMessageError('Por favor, escribe tu mensaje');
             return;
-        } else {
-            setMessageError('');
         }
 
         const email = 'correo@dominio.com'; 
@@ -96,14 +92,14 @@ export const Contacto = () => {
                         <div>
                             <button
                                 type="submit"
-                                className="w-full px-4 py-2 font-bold rounded shadow focus:outline-none focus:ring hover:ring focus:ri dark:bg-violet-400 focus:ri hover:ri hover:bg-grisSuave dark:text-gray-900"
+                                className="w-full px-4 py-2 font-bold rounded shadow bg-guaflePrimary focus:outline-none focus:ring hover:ring focus:ri dark:bg-violet-400 focus:ri hover:ri hover:bg-grisSuave dark:text-gray-900"
 
                             >
                                 Enviar Mensaje
                             </button>
                             <button
                                 type="button"
-                                className="w-full px-4 py-2 mt-4 font-bold rounded shadow focus:outline-none focus:ring hover:ring focus:ri dark:bg-violet-400 focus:ri hover:ri hover:bg-grisSuave dark:text-gray-900"
+                                className="w-full px-4 py-2 mt-4 font-bold rounded shadow bg-guaflePrimary focus:outline-none focus:ring hover:ring focus:ri dark:bg-violet-400 focus:ri hover:ri hover:bg-grisSuave dark:text-gray-900"
                                 onClick={handleSendEmail}
                             >
                                 Enviar Correo
