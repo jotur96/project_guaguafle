@@ -10,11 +10,11 @@ export default withMT({
   theme: {
     extend: {
       colors: {
-        guaflePrimary: '#FFAA6D',
-        guafleSecondary: '#FAEFDF',
-        guaflePink: '#FF87B9',
+        guaflePrimary: '#FF8A66',
+        guafleSecondary: '#FEFBF6',
+        guaflePink: '#ffbdd6',
         guafleOrange: '#FF3B00',
-        grisSuave: '#F5F5F5',
+        guafleDark: '#353531',
       },
       borderRadius: {
         'bordeado-ig': '10px', // Define tu radio de esquina personalizado

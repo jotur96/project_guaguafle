@@ -67,7 +67,7 @@ export const Nav = (props) => {
   return (
     <Navbar className="mx-auto max-w-screen-x bg-guaflePrimary py-0 fixed top-0 z-20" fullWidth="true" color="guafleOrange">
       <div className="flex items-center justify-evenly text-white">
-        <div className="relative h-20 md:h-28 w-36 md:w-44 top-0   ">
+        <div className="relative h-20 md:h-20 xl:h-24 w-36 md:w-44 top-0   ">
           <a href="/">
           <img
             className="absolute top-0 object-cover object-center h-full w-full transition-opacity duration-300"

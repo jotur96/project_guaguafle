@@ -13,8 +13,34 @@
     src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
   }
 
+  @font-face {
+    font-family: 'FitsHeavy';
+    src: url('../assets/Fits-Heavy.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'RegalsExtended';
+    src: url('../assets/Regals-Extended.otf') format('opentype');
+  }
+
 
   :root {
     /* font-family: 'TabernaSerif', sans-serif; */
     font-family: 'Lato', sans-serif;
+  }
+
+
+  .fitsheavy {
+    font-family: 'FitsHeavy';
+    src: url('../assets/Fits-Heavy.otf') format('opentype');
+  }
+
+  .tabernaserif {
+    font-family: 'TabernaSerif';
+    src: url('../assets/TabernaSerif-Regular.otf') format('opentype');
+  }
+
+  .regals {
+    font-family: 'RegalsExtended';
+    src: url('../assets/Regals-Extended.otf') format('opentype');
   }
