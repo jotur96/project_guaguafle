@@ -1,5 +1,6 @@
 import { Carousel } from "@material-tailwind/react";
 import { Layout } from "../../components/Layout";
+import { EcommerceCard } from "../../components/Card";
 
 import img1 from "../../assets/images/menu-images/elegi-tu-masa-guafle.jpg"
 import img2 from "../../assets/images/menu-images/elegi-tus-sabores.jpg"
