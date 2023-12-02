@@ -17,7 +17,7 @@ import {
             className="h-full w-full object-cover"
           />
         </CardHeader>
-        <CardBody>
+        {/* <CardBody>
           <div className="mb-2 flex items-center justify-between">
             <h1 color="blue-gray" className="font-medium">
               Waffle
@@ -32,7 +32,7 @@ import {
           >
             Waffle con helado de esto y aquello
           </h1>
-        </CardBody>
+        </CardBody> */}
         <CardFooter className="pt-0">{/* 
           <Button
             ripple={false}
