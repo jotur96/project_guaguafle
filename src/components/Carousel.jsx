@@ -1,5 +1,5 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
-import img1 from "../assets/images/img/guaguafle.png";
+
  
 export function CarouselWithContent({images}) {
 

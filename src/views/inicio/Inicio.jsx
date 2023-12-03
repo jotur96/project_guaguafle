@@ -3,6 +3,8 @@ import { Layout } from "../../components/Layout"
 import { Link } from "react-router-dom";
 import { CarouselWithContent } from "../../components/Carousel";
 import { EcommerceCard } from "../../components/Card";
+
+import img0 from "../../assets/images/inicio-images/guaguafle.png"
 import img1 from "../../assets/images/inicio-images/1.jpg"
 import img2 from "../../assets/images/inicio-images/2.jpg"
 import img3 from "../../assets/images/inicio-images/3.jpg"
@@ -16,7 +18,7 @@ export const Inicio = () => {
     const imagesMenu = [
         {
             id: 1,
-            img: "https://scontent.fasu11-1.fna.fbcdn.net/v/t39.30808-6/326163101_400058138990872_3448990309395903189_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=grASwb4LK6AAX8TwT_L&_nc_ht=scontent.fasu11-1.fna&oh=00_AfBi3daRkFd17dUgtnV5U8lSy77gCAk9PWVW8ZuWQkHJHg&oe=656CAB84",
+            img: img0,
             alt: "Elegí tu masa"
         }
     ]
