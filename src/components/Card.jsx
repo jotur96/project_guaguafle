@@ -7,14 +7,14 @@ import {
   } from "@material-tailwind/react";
 
    
-  export function EcommerceCard({image}) {
+  export function EcommerceCard({image, className}) {
     return (
-      <Card className="w-fit h-56">
+      <Card className="w-fit h-96 lg:h-64">
         <CardHeader shadow={false} floated={false} className="h-96">
           <img
             src={image}
             alt="card-image"
-            className="h-full w-full object-cover"
+            className={className}
           />
         </CardHeader>
         {/* <CardBody>
