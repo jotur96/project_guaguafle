@@ -11,6 +11,7 @@ import img3 from "../../assets/images/inicio-images/3.jpg"
 import img4 from "../../assets/images/inicio-images/4.jpg"
 import img5 from "../../assets/images/inicio-images/5.jpg"
 import img6 from "../../assets/images/inicio-images/6.jpg"
+import promo0 from '../../assets/images/inicio-images/promo.jpg'
 
 
 export const Inicio = () => {
@@ -18,6 +19,11 @@ export const Inicio = () => {
     const imagesMenu = [
         {
             id: 1,
+            img: img0,
+            alt: "Elegí tu masa"
+        },
+        {
+            id: 2,
             img: img0,
             alt: "Elegí tu masa"
         }
@@ -30,7 +36,7 @@ export const Inicio = () => {
                     <CarouselWithContent images={imagesMenu} />
                 </div>
                 <div className="flex justify-between gap-36   px-10 lg-px-20 xl:px-36 py-10 my-10">
-                    <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img2} alt="" />
+                    <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img2} alt="guafle" />
                     <div className="flex flex-col items-center text-center justify-center xl:text-3xl regals gap-4">
                         <p className="text-xl">VIENEN DE</p>
                         <p className="text-3xl">FRANCIA</p>
@@ -41,14 +47,14 @@ export const Inicio = () => {
                         <p className="text-xl">HECHAS EN</p>
                         <p className="text-3xl">ASUNCIÓN</p>
                     </div>
-                    <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img3} alt="" />
+                    <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img3} alt="guafle" />
                 </div>
-                <div className="flex flex-col lg:flex-row items-center justify-center w-full xl:h-screen-50 sm:gap-20 lg:bg-deep-orange-200 xl:gap-44 ">
+                <div className="flex flex-col lg:flex-row items-center justify-center w-full xl:h-screen-50 sm:gap-20 pt-20 lg:pt-0 bg-gray-400 lg:bg-deep-orange-200 xl:gap-44 ">
                     <div className="flex-col items-center justify-center w-96 lg:w-56 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover object-left-top" image={img4}></EcommerceCard></div>
                     <div className="flex-col items-center justify-center w-96 lg:w-56 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img5}></EcommerceCard></div>
                     <div className="flex-col items-center justify-center w-96 lg:w-56 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img6}></EcommerceCard></div>
                 </div>
-                <div className="flex flex-row justify-center w-full xl:h-20 py-20 xl:p-2  lg:bg-deep-orange-200">
+                <div className="flex flex-row justify-center w-full xl:h-20 py-20 xl:p-2 bg-gray-400 lg:bg-deep-orange-200">
                     <Link to="/menu">
                         <Button>Nuestro menú</Button>
                     </Link>

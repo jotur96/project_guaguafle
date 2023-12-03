@@ -5,9 +5,14 @@ import img2 from "../../assets/images/personaje2.png";
 import img3 from "../../assets/images/personaje3.png";
 
 import background from "../../assets/images/img/chocolate.png"
+import { useEffect } from "react";
 
 
 export const Nosotros = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
 
     // const background = "https://scontent.cdninstagram.com/v/t39.30808-6/401503687_305085889049946_8132371084919703394_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08&_nc_ht=scontent.cdninstagram.com&_nc_cat=106&_nc_ohc=8gaCF4xCpy0AX_Mqtcs&edm=APs17CUAAAAA&ccb=7-5&oh=00_AfDcqHzDWUyDIRDvVV2T0ykQG6HJmF2bj_5QO2-qPrJ6sQ&oe=6563ADC0&_nc_sid=10d13b"
 
@@ -19,9 +24,9 @@ export const Nosotros = () => {
                     <div className="h-screen-50 w-full z-10">
                         <img className="w-full h-full object-contain" src={img1} alt="Background" />
                     </div>
-                    <div className="flex flex-col  items-center h-fit w-fit bg-guafleSecondary z-10 px-10 md:px-24 xl:px-48 2xl:px-80 pb-10">
-                        <h2 className="text-2xl md:text-5xl xl:text-6xl 2xl:text-8xl my-10 text-guafleOrange">Nuestra Historia</h2>
-                        <p className="text-lg md:text-xl 2xl:text-3xl text-justify text-guafleOrange">
+                    <div className="flex flex-col  items-center h-fit w-fit bg-guafleSecondary z-10 px-10 md:px-24 xl:px-48 2xl:px-80 pb-10 bg-opacity-90 ">
+                        <h2 className="text-2xl md:text-5xl xl:text-6xl 2xl:text-8xl my-10 text-guafleDark font-bold">Nuestra Historia</h2>
+                        <p className="text-lg md:text-xl 2xl:text-3xl text-justify text-guafleDark">
                             Esta es nuestra historia:
                             Nos gusta mucho movernos, ser un trotamundos girando
                             Venimos de todas partes, y en cada lugar descubrimos un sabor único
@@ -33,9 +38,9 @@ export const Nosotros = () => {
                     </div>
                 </section>
                 <section className="flex flex-col h-ful">
-                    <div className="flex flex-col items-center h-fit w-full bg-guafleSecondary z-10 px-10 md:px-24 xl:px-48 2xl:px-80 pb-10">
-                        <h2 className="text-2xl text-center md:text-5xl lg:text-6xl 3xl:text-8xl my-10  text-guafleOrange">El nombre ¿De dónde viene?</h2>
-                        <p className="text-lg md:text-xl 2xl:text-3xl text-justify text-guafleOrange">
+                    <div className="flex flex-col items-center h-fit w-full bg-guafleSecondary z-10 px-10 md:px-24 xl:px-48 2xl:px-80 pb-10 bg-opacity-90">
+                        <h2 className="text-2xl text-center md:text-5xl lg:text-6xl 3xl:text-8xl my-10  text-guafleDark font-bold">El nombre ¿De dónde viene?</h2>
+                        <p className="text-lg md:text-xl 2xl:text-3xl text-justify text-guafleDark">
                             En algunos lugares, Guagua, o La Guagua, es un transporte móvil, una pequeña especie de
                             combi que te mueve a todos lados, su característica es esa, la de hacerte sentir que puedes
                             estar en varios lugares. También hay una relación con la niñez, los chicos pequeños, casi
