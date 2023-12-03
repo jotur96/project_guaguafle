@@ -44,16 +44,16 @@ export const Inicio = () => {
                     <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img3} alt="" />
                 </div>
                 <div className="flex flex-col lg:flex-row items-center justify-center w-full xl:h-screen-50 sm:gap-20 lg:bg-deep-orange-200 xl:gap-44 ">
-                    <div className="flex-col items-center justify-center w-96 lg:w-48 lg:h-56 sm:py-5"><EcommerceCard image={img4}></EcommerceCard></div>
-                    <div className="flex-col items-center justify-center w-96 lg:w-48 lg:h-56 sm:py-5"><EcommerceCard image={img5}></EcommerceCard></div>
-                    <div className="flex-col items-center justify-center w-96 lg:w-48 lg:h-56 sm:py-5"><EcommerceCard image={img6}></EcommerceCard></div>
+                    <div className="flex-col items-center justify-center w-96 lg:w-56 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover object-left-top" image={img4}></EcommerceCard></div>
+                    <div className="flex-col items-center justify-center w-96 lg:w-56 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img5}></EcommerceCard></div>
+                    <div className="flex-col items-center justify-center w-96 lg:w-56 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img6}></EcommerceCard></div>
                 </div>
                 <div className="flex flex-row justify-center w-full xl:h-20 py-20 xl:p-2  lg:bg-deep-orange-200">
                     <Link to="/menu">
                         <Button>Nuestro menú</Button>
                     </Link>
                 </div>
-                <div className="flex flex-col items-center justify-center xl:w-1/2 2xl:w-fit xl:h-screen-50 gap-6 my-10">
+                <div className="flex flex-col items-center justify-center xl:w-1/2 2xl:w-fit xl:h-screen-50 gap-6 my-10 pb-20 lg:py-0 ">
                     <p className="tabernaserif text-2xl text-center">¡Una forma diferente y divertida de comer waffles!</p>
                     <p className="text-xl text-center ">Encontranos en Teniente Vera esquina Denis Roa</p>
                     <p className="text-xl text-center">Lunes a Domingos - 12:00 a 20:00</p>
