@@ -7,17 +7,17 @@ import {
   } from "@material-tailwind/react";
 
    
-  export function EcommerceCard() {
+  export function EcommerceCard({image}) {
     return (
       <Card className="w-fit h-56">
         <CardHeader shadow={false} floated={false} className="h-96">
           <img
-            src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+            src={image}
             alt="card-image"
             className="h-full w-full object-cover"
           />
         </CardHeader>
-        <CardBody>
+        {/* <CardBody>
           <div className="mb-2 flex items-center justify-between">
             <h1 color="blue-gray" className="font-medium">
               Waffle
@@ -32,7 +32,7 @@ import {
           >
             Waffle con helado de esto y aquello
           </h1>
-        </CardBody>
+        </CardBody> */}
         <CardFooter className="pt-0">{/* 
           <Button
             ripple={false}
