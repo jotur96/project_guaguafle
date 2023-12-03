@@ -22,7 +22,7 @@ export const Contacto = () => {
             return;
         }
         
-        const whatsappLink = `https://api.whatsapp.com/send?phone=595971167440&text=${encodeURIComponent(`Hola, mi nombre es ${name} y mi consulta es: ${message}`)}`;
+        const whatsappLink = `https://api.whatsapp.com/send?phone=595971217495&text=${encodeURIComponent(`Hola, mi nombre es ${name} y mi consulta es: ${message}`)}`;
 
         window.open(whatsappLink, '_blank');
     };
