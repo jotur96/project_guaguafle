@@ -5,14 +5,15 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logoBlanco from "../assets/images/logo/blanco-sin-tag.png"
 import logoNegro from "../assets/images/logo/negro-sin-tag.png"
 
-const NavItem = ({ to, children }) => {
+const NavItem = ({ to, children, closeMenu }) => {
   const activeStyle = "underline underline-offset-8 font-semibold text-guafleSecondary hover:no-underline"
   return (
     <li className="flex items-center text-black hover:text-guafleSecondary lg:text-4xl px-5 ">
       <NavLink
         to={to}
         onClick={() => {
-          window.scrollTo({ top: 0, behavior: 'smooth' })
+          window.scrollTo({ top: 0 })
+          closeMenu()
         }}
         className={({ isActive }) => isActive ? activeStyle : ""}>
         {children}
@@ -22,13 +23,13 @@ const NavItem = ({ to, children }) => {
 };
 
 
-function NavList() {
+function NavList({ closeMenu }) {
   return (
     <ul className="text-2xl my-10 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row items-center gap-6">
-      <NavItem to='/'>Inicio</NavItem>
-      <NavItem to='/menu'>Menú</NavItem>
-      <NavItem to='/nosotros'>Nosotros</NavItem>
-      <NavItem to='/contacto'>Contacto</NavItem>
+      <NavItem to='/' closeMenu={closeMenu}>Inicio</NavItem>
+      <NavItem to='/menu' closeMenu={closeMenu} >Menú</NavItem>
+      <NavItem to='/nosotros' closeMenu={closeMenu}>Nosotros</NavItem>
+      <NavItem to='/contacto' closeMenu={closeMenu}>Contacto</NavItem>
     </ul>
   );
 }
@@ -52,6 +53,12 @@ export const Nav = (props) => {
     }
   };
 
+  const closeMenu = () => {
+    if (openNav) {
+      setOpenNav(!openNav);
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
     document.addEventListener("click", handleOutsideClick);
@@ -69,27 +76,27 @@ export const Nav = (props) => {
       <div className="flex items-center justify-evenly text-white">
         <div className="relative h-20 md:h-20 xl:h-24 w-36 md:w-44 top-0   ">
           <a href="/">
-          <img
-            className="absolute top-0 object-cover object-center h-full w-full transition-opacity duration-300"
-            src={logoBlanco} // Imagen visible
-            alt="Logo"
-          />
-          <img
-            className="absolute top-0 object-cover object-center h-full w-full transition-opacity duration-300 hover:opacity-0"
-            src={logoNegro} // Imagen oculta
-            alt="Logo"
-          />
+            <img
+              className="absolute top-0 object-cover object-center h-full w-full transition-opacity duration-300"
+              src={logoBlanco} // Imagen visible
+              alt="Logo"
+            />
+            <img
+              className="absolute top-0 object-cover object-center h-full w-full transition-opacity duration-300 hover:opacity-0"
+              src={logoNegro} // Imagen oculta
+              alt="Logo"
+            />
           </a>
         </div>
         <div className="hidden lg:block">
-          <NavList />
+          <NavList closeMenu={closeMenu}/>
         </div>
         <IconButton
           variant="text"
           className="ml-auto mr-10 text-white hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
-          onClick={() => {   
-            window.scrollTo({ top: 0})
+          onClick={() => {
+            window.scrollTo({ top: 0 })
             setOpenNav(!openNav);
           }}
         >
@@ -101,7 +108,7 @@ export const Nav = (props) => {
         </IconButton>
       </div>
       <Collapse open={openNav}>
-        <NavList />
+        <NavList closeMenu={closeMenu} />
       </Collapse>
     </Navbar>
   );
