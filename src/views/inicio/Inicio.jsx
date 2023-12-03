@@ -57,7 +57,7 @@ export const Inicio = () => {
                     <p className="tabernaserif text-2xl text-center">¡Una forma diferente y divertida de comer waffles!</p>
                     <p className="text-xl text-center ">Encontranos en Teniente Vera esquina Denis Roa</p>
                     <p className="text-xl text-center">Lunes a Domingos - 12:00 a 20:00</p>
-                    <Link to="/menu" className="mt-5">
+                    <Link to="/nosotros" className="mt-5">
                         <Button>Conoce más sobre nosotros</Button>
                     </Link>
                 </div>
