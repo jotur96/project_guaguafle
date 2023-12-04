@@ -32,7 +32,7 @@ export const Inicio = () => {
     return (
         <Layout>
             <div className="w-full h-full flex flex-col items-center z-0 pt-10">
-                <div className="xl:h-screen-76 md:h-screen-60 lg:h-screen-60 sm:h-60 w-auto flex items-center m-0">
+                <div className="h-screen-50 xl:h-screen-76 w-full px-10 lg-px-20 xl:px-36">
                     <CarouselWithContent images={imagesMenu} />
                 </div>
                 <div className="flex justify-between gap-36   px-10 lg-px-20 xl:px-36 py-10 my-10">
