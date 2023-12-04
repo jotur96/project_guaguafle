@@ -56,9 +56,9 @@ export const Contacto = () => {
             <div className="flex justify-center w-full bg-white">
                 <section className="p-11 dark:text-gray-100 ">
                     <form onSubmit={handleSubmit} className="container w-full p-8 space-y-6 rounded-md shadow dark:bg-gray-900 bg-guafleSecondary">
-                        <h2 className="block w-full text-3xl font-bold">Contactanos</h2>
+                        <h2 className="block w-full text-3xl font-bold regals">Contactanos</h2>
                         <div>
-                            <label htmlFor="name" className="block mb-1 ml-1">
+                            <label htmlFor="name" className="block mb-1 ml-1 font-bold">
                                 Nombre
                             </label>
                             <input
@@ -73,7 +73,7 @@ export const Contacto = () => {
                             {nameError && <p className="text-red-500">{nameError}</p>}
                         </div>
                         <div>
-                            <label htmlFor="message" className="block mb-1 ml-1">
+                            <label htmlFor="message" className="block mb-1 ml-1 font-bold">
                                 Mensaje
                             </label>
                             <textarea
@@ -92,14 +92,14 @@ export const Contacto = () => {
                         <div>
                             <button
                                 type="submit"
-                                className="w-full px-4 py-2 font-bold rounded shadow bg-guaflePrimary focus:outline-none focus:ring hover:ring focus:ri dark:bg-violet-400 focus:ri hover:ri hover:bg-grisSuave dark:text-gray-900"
+                                className="text-white w-full px-4 py-2 font-bold rounded shadow bg-guaflePrimary focus:outline-none focus:ring hover:ring focus:ri dark:bg-violet-400 focus:ri hover:ri hover:bg-grisSuave dark:text-gray-900"
 
                             >
                                 Enviar Mensaje
                             </button>
                             <button
                                 type="button"
-                                className="w-full px-4 py-2 mt-4 font-bold rounded shadow bg-guaflePrimary focus:outline-none focus:ring hover:ring focus:ri dark:bg-violet-400 focus:ri hover:ri hover:bg-grisSuave dark:text-gray-900"
+                                className="text-white w-full px-4 py-2 mt-4 font-bold rounded shadow bg-guaflePrimary focus:outline-none focus:ring hover:ring focus:ri dark:bg-violet-400 focus:ri hover:ri hover:bg-grisSuave dark:text-gray-900"
                                 onClick={handleSendEmail}
                             >
                                 Enviar Correo

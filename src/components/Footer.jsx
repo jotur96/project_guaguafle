@@ -14,33 +14,33 @@ export const Footer = () => {
                 <div className="lg:pl-20 xl:pl-36 pt-10">
                     <div className="flex flex-col items-center">
                         <div className="flex items-center">
-                            <h2 className="text-4xl">Contacto</h2>
+                            <h2 className="text-4xl regals text-guafleSecondary">Contacto</h2>
                         </div>
                         <div className="flex flex-col justify-center items-center gap-2 pt-5">
-                            <h4 className="text-2xl">Teléfono</h4>
-                            <a href="https://wa.me/595971217495" target="_blank" rel="noreferrer" className="hover:text-guafleSecondary">+595 971 217 495</a>
+                            <h4 className="text-2xl font-bold text-deep-orange-50">Teléfono</h4>
+                            <a href="https://wa.me/595971217495" target="_blank" rel="noreferrer" className="hover:text-guafleSecondary font-semibold text-deep-orange-50">+595 971 217 495</a>
                         </div>
                         <div className="flex flex-col justify-center items-center gap-2 px-2 pt-5">
-                            <h4 className="text-2xl">Dirección</h4>
-                            <a href="https://maps.app.goo.gl/yWUjEyucCQJEBXiP6" className="whitespace-nowrap hover:text-guafleSecondary">Teniente Hector Vera 2737 Esq. Denis Roa</a>
+                            <h4 className="text-2xl font-bold text-deep-orange-50">Dirección</h4>
+                            <a href="https://maps.app.goo.gl/yWUjEyucCQJEBXiP6" className="whitespace-nowrap hover:text-guafleSecondary font-semibold text-deep-orange-50">Teniente Hector Vera 2737 Esq. Denis Roa</a>
                         </div>
                     </div>
 
                     <div className='flex mx-auto justify-evenly pt-10 md:py-14 pb-5 '>
                         <a href="https://facebook.com/guaguafle" target="_blank" rel="noreferrer">
-                            <FaFacebook className="text-4xl  transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-600 cursor-pointer" />
+                            <FaFacebook className="text-4xl text-guafleSecondary transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-600 cursor-pointer" />
                         </a>
                         <a href="https://instagram.com/guaguafle/" target="_blank" rel="noreferrer">
-                            <FaInstagram className="text-4xl hover:text-white from-orange-400 via-red-500 to-purple-800 transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:bg-gradient-to-br rounded-bordeado-ig cursor-pointer" />
+                            <FaInstagram className="text-4xl text-guafleSecondary hover:text-white from-orange-400 via-red-500 to-purple-800 transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:bg-gradient-to-br rounded-bordeado-ig cursor-pointer" />
                         </a>
                         <a href="https://wa.me/595971217495" target="_blank" rel="noreferrer">
-                            <FaWhatsapp className="text-4xl  transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-green-500 cursor-pointer" />
+                            <FaWhatsapp className="text-4xl text-guafleSecondary transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-green-500 cursor-pointer" />
                         </a>
                         <a href="https://www.tiktok.com/@guaguafle" target="_blank" rel="noreferrer">
-                            <FaTiktok className="text-4xl transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-white cursor-pointer" />
+                            <FaTiktok className="text-4xl text-guafleSecondary transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-white cursor-pointer" />
                         </a>
                         <a href="https://x.com/guaguafle" target="_blank" rel="noreferrer">
-                            <FaTwitter className="text-4xl transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-500 cursor-pointer" />
+                            <FaTwitter className="text-4xl text-guafleSecondary transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-blue-500 cursor-pointer" />
                         </a>
 
                     </div>
