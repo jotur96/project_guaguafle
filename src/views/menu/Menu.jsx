@@ -1,138 +1,137 @@
-import { Carousel } from "@material-tailwind/react";
 import { Layout } from "../../components/Layout";
 import { EcommerceCard } from "../../components/Card";
+import { HorizontalCard } from "../../components/Card";
+import { Button } from "@material-tailwind/react";
 
 import img1 from "../../assets/images/menu-images/elegi-tu-masa-guafle.jpg"
 import img2 from "../../assets/images/menu-images/elegi-tus-sabores.jpg"
 import img3 from "../../assets/images/menu-images/elegi-tus-toppings.jpg"
-import menu1 from "../../assets/images/menu-images/arma-tu-guafle.jpg"
-import menu2 from "../../assets/images/menu-images/menu-guaguafle.jpg"
-import background from "../../assets/images/img/chocolate.png"
+import salado1 from "../../assets/images/menu-images/butifarra.jpg"
+import salado2 from "../../assets/images/menu-images/capresse.jpg"
+import salado3 from "../../assets/images/menu-images/pollo.jpg"
+import destacado1 from "../../assets/images/menu-images/rocklets.jpg"
+import destacado2 from "../../assets/images/menu-images/rosa.jpg"
+import destacado3 from "../../assets/images/menu-images/ddl.jpg"
+import destacado4 from "../../assets/images/menu-images/frutilla.jpg"
 
 
 
 export const Menu = () => {
 
-
-    const CarouselItems = ({ img, alt }) => {
-        return <img src={img} alt={alt} className="h-full w-full object-cover"></img>
+    const MenuDesc = ({ item, precio, desc }) => {
+        return <div className="items-center w-full flex-col">
+            <div className="flex items-center w-full flex-row justify-between">
+                <p className="text-xl text-left font-semibold py-2 flex-col">{item}</p>
+                <p className="text-xl text-right font-semibold py-2 flex-col">{precio}</p>
+            </div>
+            <p className="text-sm text-left py-2 flex-col">{desc}</p>
+        </div>
     }
 
-    const MenuItems = ({ img, alt }) => {
-        return <img src={img} alt={alt} className="rounded-3xl"></img>
-    }
-
-    const images = [
-        {
-            id: 1,
-            img: img1,
-            alt: "Elegí tu masa"
-        },
-        {
-            id: 2,
-            img: img2,
-            alt: "Elegí tus sabores"
-        },
-        {
-            id: 3,
-            img: img3,
-            alt: "Elegí tus toppings"
-        },
-    ]
-
-    const menuImages = [
-        {
-            id: 1,
-            img: menu1,
-            alt: "Menu"
-        },
-        {
-            id: 2,
-            img: menu2,
-            alt: "Menu"
-        }
-    ]
-
-    const imagesIg = [
-        {
-            id: 1,
-            img: "https://scontent.cdninstagram.com/v/t39.30808-6/402648118_305086659049869_1631573336250979745_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08&_nc_ht=scontent.cdninstagram.com&_nc_cat=109&_nc_ohc=5iXHDPmnPgAAX_RyiHo&edm=APs17CUAAAAA&ccb=7-5&oh=00_AfB3NrV2w6y_lBBxIn2_d5GprXto4TdFm5tLDV3Hluotaw&oe=6565936D&_nc_sid=10d13b",
-            alt: "Guafles"
-        },
-        {
-            id: 2,
-            img: "https://scontent.cdninstagram.com/v/t39.30808-6/385502631_281216221436913_8145499822544321553_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08&_nc_ht=scontent.cdninstagram.com&_nc_cat=109&_nc_ohc=C6QM-UXilVoAX98QM1R&edm=APs17CUAAAAA&ccb=7-5&oh=00_AfAJrXIF9ah31PtpFRp6npZZ3hrdLEJuoaSZPrvXJR5ffg&oe=6564AC1A&_nc_sid=10d13b",
-            alt: "Guafles"
-        },
-        {
-            id: 3,
-            img: "https://instagram.fasu3-1.fna.fbcdn.net/v/t39.30808-6/376840028_268954202663115_3124706802048995142_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4yMDAweDIwMDAuc2RyIn0&_nc_ht=instagram.fasu3-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=yQCXXKDC2EkAX-Ad-So&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzE4OTUyMzEyNzQxMDczOTIzNw%3D%3D.2-ccb7-5&oh=00_AfCr_mfqH5yCSTw8xi04cFfhi3qr5H3Mj1EenYeXlzciWA&oe=6563F136&_nc_sid=b41fef",
-            alt: "Guafles"
-        },
-        {
-            id: 4,
-            img: "https://instagram.fasu3-1.fna.fbcdn.net/v/t39.30808-6/361656899_17893834712840524_8085700217199640029_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDAweDEwMDAuc2RyIn0&_nc_ht=instagram.fasu3-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=biwIYQOp_Y8AX_rsCTO&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzE0OTY2NTYzNDU5MzIzMjE5OQ%3D%3D.2-ccb7-5&oh=00_AfAHIzgYkVdSORvk6k29Q1elcJnfzxcT96CnmJ-YaPYQVg&oe=6563DC1E&_nc_sid=b41fef",
-            alt: "Guafles"
-        },
-        {
-            id: 5,
-            img: "https://instagram.fasu3-1.fna.fbcdn.net/v/t39.30808-6/365955084_17896491131840524_3474742778850007025_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyIn0&_nc_ht=instagram.fasu3-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=gAFhKNebbnwAX_cNgfP&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzE2MjgxNjI3ODQ5NzYxNTUyOA%3D%3D.2-ccb7-5&oh=00_AfDVlSoCduUPAblHGai_M5rn7v-Ytl0iyI-o2DODfvlNnQ&oe=65633D5F&_nc_sid=b41fef",
-            alt: "Guafles"
-        },
-    ]
-
-
-    // const background = "https://scontent.cdninstagram.com/v/t39.30808-6/401503687_305085889049946_8132371084919703394_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08&_nc_ht=scontent.cdninstagram.com&_nc_cat=106&_nc_ohc=8gaCF4xCpy0AX_Mqtcs&edm=APs17CUAAAAA&ccb=7-5&oh=00_AfDcqHzDWUyDIRDvVV2T0ykQG6HJmF2bj_5QO2-qPrJ6sQ&oe=6563ADC0&_nc_sid=10d13b"
 
 
     return (
         <Layout>
-            <div className="flex flex-col h-full w-full">
-                <img className="fixed w-full h-full object-cover opacity-40 z-0" src={background} alt="Background" />
-                <div className="h-full w-full">
-                    <section className="flex 2xl:flex-row flex-col-reverse w-full 2xl:h-fit h-screen items-center justify-center">
-                        <div className="flex items-center justify-center w-full 2xl:w-1/2 h-1/2 2xl:h-fit 2xl:px-36 z-10 bg-guafleSecondary 2xl:py-10">
-                            <Carousel loop={true} autoplay={true} autoplayDelay={5000} className="rounded-3xl">
-                                {images.map((image) => (
-                                    <CarouselItems key={image.id} img={image.img} alt={image.alt} />
-                                ))}
-                            </Carousel>
-                        </div>
-                        <div className="flex items-center justify-center 2xl:w-1/2 h-screen-76 opacity-100  z-10">
-                            <p className="text-4xl 2xl:text-7xl opacity-100 text-center ">
-                                Waffles Únicos! <br />
-                                Crea, <br />
-                                Combina, <br />
-                                Disfruta.
-                            </p>
-                        </div>
-                    </section>
-                    <section className="flex 2xl:flex-row flex-col-reverse w-full h-screen items-center justify-center">
-                        <div className="flex flex-col items-center justify-around w-full 2xl:w-1/2 h-1/2 2xl:h-full opacity-95">
-                            <div className="flex items-center justify-center w-full h-1/4">
-                            <p className="text-2xl 2xl:text-6xl opacity-100 text-center">
-                                Los Waffles mas destacados!!
-                            </p>
-                            </div>
-                            <div className=" w-full h-3/4 rounded-3xl 2xl:px-20 2xl:pb-20">
-                            <Carousel loop={true} className="rounded-3xl">
-                                {imagesIg.map((image) => (
-                                    <CarouselItems key={image.id} img={image.img} alt={image.alt} />
-                                ))}
-                            </Carousel>
-                            </div>
+            <div className="w-full h-full flex flex-col justify-center items-center z-0 py-10">
 
-                        </div>
-                        <div className="flex items-center justify-center w-full 2xl:w-1/2 h-full  2xl:px-10 bg-guafleSecondary z-10">
-                            
-                            <Carousel loop={true} className="2xl:w-700 rounded-3xl 2xl:h-full">
-                                {menuImages.map((image) => (
-                                    <CarouselItems key={image.id} img={image.img} alt={image.alt} />
-                                ))}
-                            </Carousel>
-                        </div>
-                    </section>
+                <div className="flex flex-row items-center justify-center w-full h-fit">
+                    <p className="regals text-4xl text-center py-3">¡Armá tu propio waffle!</p>
                 </div>
+
+                <div className="flex flex-col lg:flex-row justify-center w-full xl:h-fit
+                sm:gap-20 xl:gap-20 px-5 md:px-20 my-5">
+
+                    <div className="items-center justify-center w-full md:w-1/3 h-fit py-5">
+                        <EcommerceCard className="h-full w-full object-cover" image={img1}></EcommerceCard>
+                        <p className="text-2xl text-center regals py-4">Masas</p>
+                        <MenuDesc item={"Básica - Grande"} precio={"Gs. 30.000"}></MenuDesc>
+                        <MenuDesc item={"Básica - Chica"} precio={"Gs. 25.000"}></MenuDesc>
+                        <MenuDesc item={"Chips de Chocolate - Grande"} precio={"Gs. 32.000"}></MenuDesc>
+                        <MenuDesc item={"Chips de Chocolate - Chica"} precio={"Gs. 27.000"}></MenuDesc>
+                    </div>
+
+                    <div className="items-center justify-center w-full md:w-1/3 h-fit sm:py-5">
+                        <EcommerceCard className="h-full w-full object-cover" image={img2}></EcommerceCard>
+                        <p className="text-2xl text-center regals py-4">Sabores de helado</p>
+                        <MenuDesc item={"Chocolate"}></MenuDesc>
+                        <MenuDesc item={"Dulce de leche"}></MenuDesc>
+                        <MenuDesc item={"Americana"}></MenuDesc>
+                        <MenuDesc item={"Frutilla"}></MenuDesc>
+                    </div>
+
+                    <div className="items-center justify-center w-full md:w-1/3 h-fit sm:py-5">
+                        <EcommerceCard className="h-full w-full object-cover" image={img3}></EcommerceCard>
+                        <p className="text-2xl text-center regals py-4">Toppings</p>
+                        <MenuDesc item={"Oreos"}></MenuDesc>
+                        <MenuDesc item={"Rocklets"}></MenuDesc>
+                        <MenuDesc item={"Frutas y granolas"}></MenuDesc>
+                        <MenuDesc item={"Chocolates (negros o blancos)"}></MenuDesc>
+                        <p className="text-sm text-center py-2 font-semibold">Consultá por nuevas opciones</p>
+                    </div>
+
+                </div>
+
+                <div className="flex flex-row items-center justify-center w-full h-fit bg-deep-orange-100">
+                    <p className="regals text-4xl text-center py-2 pt-10">Opciones Saladas</p>
+                </div>
+
+                <div className="flex flex-col lg:flex-row justify-center w-full xl:h-fit
+                sm:gap-20 xl:gap-20 px-5 md:px-20 py-5 bg-deep-orange-100">
+
+                    <div className="items-center justify-center w-ful md:w-1/3 h-fit py-5">
+                        <EcommerceCard className="h-full w-full object-cover" image={salado1}></EcommerceCard>
+                    </div>
+
+                    <div className="items-center justify-center w-full md:w-1/3 h-fit py-5">
+                        <EcommerceCard className="h-full w-full object-cover" image={salado2}></EcommerceCard>
+                    </div>
+
+                    <div className="items-center justify-center w-full md:w-1/3 h-fit py-5">
+                        <EcommerceCard className="h-full w-full object-cover" image={salado3}></EcommerceCard>
+                    </div>
+
+                </div>
+
+                <div className="flex flex-col lg:flex-row justify-center w-full xl:h-fit
+                    sm:gap-20 xl:gap-20 px-5 md:px-20 py-5 bg-deep-orange-100">
+
+                    <div className="items-center justify-center md-full md:w-1/2 h-fit sm:py-5 md:px-10 bg-deep-orange-100">
+                        <MenuDesc item={"Guafle Caprese"} precio={"Gs. 30.000"} desc={"Muzzarella, tomates"}></MenuDesc>
+                        <MenuDesc item={"Guafle con Omelette, jamón y queso"} precio={"Gs. 30.000"} desc={"Omelettes, jamón, queso catupiry"}></MenuDesc>
+                        <MenuDesc item={"Guafle Butifarra con Salsa de Ajo"} precio={"Gs. 30.000"} desc={"Butifarra, salsa de ajo"}></MenuDesc>
+                        <MenuDesc item={"Guafle con Pollo y Queso Catupiry"} precio={"Gs. 30.000"} desc={"Pollo, queso catupiry"}></MenuDesc>
+                        <MenuDesc item={"Guafle con Pancho, Papitas y Aderezos"} precio={"Gs. 30.000"} desc={"Salsa de tomate, pancho, papitas"}></MenuDesc>
+                        <br />
+                        <MenuDesc item={"Salsa adicional"} precio={"Gs. 2.000"} desc={"Ajo picante, ketchup, mayonesa, mostaza, chimichurri, salsa de ajo de la casa"}></MenuDesc>
+                    </div>
+
+                </div>
+
+                <div className="flex flex-row items-center justify-center w-full h-fit">
+                    <p className="regals text-4xl text-center py-2 pt-10">Destacados</p>
+                </div>
+
+                <div className="flex flex-col justify-center items-center w-full xl:h-fit gap-10
+                    md:gap-20 xl:gap-20 px-5 md:px-20 my-5">
+                    <HorizontalCard image={destacado1}
+                        title={"Waffle con helado de chocolate"}
+                        txt={"Masa crocante y calentita rellena de helado de chocolate acompañado con rocklets."}>
+                    </HorizontalCard>
+                    <HorizontalCard image={destacado2}
+                        title={"Waffle con helado de frutilla"}
+                        txt={"Guafle calentito y crocante con un relleno de helado de frutilla y marshmallow con una cobertura a elección."}>
+                    </HorizontalCard><HorizontalCard image={destacado3}
+                        title={"Waffle con helado de dulce de leche"}
+                        txt={"Masa dulce extra crocante con relleno de un delicioso helado cremoso de dulce de leche."}>
+                    </HorizontalCard><HorizontalCard image={destacado4}
+                        title={"Waffle con helado de crema americana"}
+                        txt={"Waffle relleno de helado de crema americana con frutillas y un toque de granola por encima."}>
+                    </HorizontalCard>
+                    <a href="https://www.pedidosya.com.py/restaurantes/asuncion/Guaguafle-menu?search=guaguafle" target="blank">
+                        <Button className="bg-guaflePink bg-opacity-80 text-white hover:scale-[1.02] focus:scale-[1.02] hover:shadow-sm">PedidosYa</Button>
+                    </a>
+                </div>
+
             </div>
         </Layout>
         // <Layout>

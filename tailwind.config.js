@@ -11,8 +11,8 @@ export default withMT({
     extend: {
       colors: {
         guaflePrimary: '#FF8A66',
-        guafleSecondary: '#FEFBF6',
-        guaflePink: '#ffbdd6',
+        guafleSecondary: '#fcf5e8',
+        guaflePink: '#f47488',
         guafleOrange: '#FF3B00',
         guafleDark: '#353531',
       },

@@ -38,33 +38,35 @@ export const Inicio = () => {
                 <div className="flex justify-between gap-36   px-10 lg-px-20 xl:px-36 py-10 my-10">
                     <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img2} alt="guafle" />
                     <div className="flex flex-col items-center text-center justify-center xl:text-3xl regals gap-4">
-                        <p className="text-xl">VIENEN DE</p>
-                        <p className="text-3xl">FRANCIA</p>
-                        <p className="text-xl">PARECEN DE</p>
-                        <p className="text-3xl">ESTADOS UNIDOS</p>
-                        <p className="text-xl">CON RECETA DE</p>
-                        <p className="text-3xl">NEUQUÉN</p>
-                        <p className="text-xl">HECHAS EN</p>
-                        <p className="text-3xl">ASUNCIÓN</p>
+                        <p className="sm:text-sm md:text-lg lg:text-xl">VIENEN DE</p>
+                        <p className="sm:text-3xl md:text-4xl">FRANCIA</p>
+                        <p className="sm:text-sm md:text-lg lg:text-xl">PARECEN DE</p> 
+                        <p className="sm:text-3xl md:text-4xl">ESTADOS UNIDOS</p>
+                        <p className="sm:text-sm md:text-lg lg:text-xl">CON RECETA DE</p>
+                        <p className="sm:text-3xl md:text-4xl">NEUQUÉN</p>
+                        <p className="sm:text-sm md:text-lg lg:text-xl">HECHAS EN</p>
+                        <p className="sm:text-3xl md:text-4xl">ASUNCIÓN</p>
                     </div>
                     <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img3} alt="guafle" />
                 </div>
-                <div className="flex flex-col lg:flex-row items-center justify-center w-full xl:h-screen-50 sm:gap-20 pt-20 lg:pt-0 bg-gray-400 lg:bg-deep-orange-200 xl:gap-44 ">
-                    <div className="flex-col items-center justify-center w-96 lg:w-56 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover object-left-top" image={img4}></EcommerceCard></div>
-                    <div className="flex-col items-center justify-center w-96 lg:w-56 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img5}></EcommerceCard></div>
-                    <div className="flex-col items-center justify-center w-96 lg:w-56 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img6}></EcommerceCard></div>
-                </div>
-                <div className="flex flex-row justify-center w-full xl:h-20 py-20 xl:p-2 bg-gray-400 lg:bg-deep-orange-200">
-                    <Link to="/menu">
-                        <Button>Nuestro menú</Button>
-                    </Link>
+                <div className="bg-deep-orange-100 lg:gap-20 flex flex-col w-full pt-10">
+                    <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:px-14 xl:h-screen-50 sm:gap-20 pb-5 xl:gap-32">
+                        <div className="flex-col items-center justify-center w-80 md:w-96 lg:w-1/3 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img4}></EcommerceCard></div>
+                        <div className="flex-col items-center justify-center w-80 md:w-96 lg:w-1/3 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img5}></EcommerceCard></div>
+                        <div className="flex-col items-center justify-center w-80 md:w-96 lg:w-1/3 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img6}></EcommerceCard></div>
+                    </div>
+                    <div className="flex flex-row justify-center w-full xl:h-20 pb-10 xl:p-2">
+                        <Link to="/menu">
+                        <Button className="bg-guaflePink bg-opacity-95 text-white hover:scale-[1.02] hover:shadow-sm">Nuestro menú</Button>
+                        </Link>
+                    </div>
                 </div>
                 <div className="flex flex-col items-center justify-center xl:w-1/2 2xl:w-fit xl:h-screen-50 gap-6 my-10 pb-20 lg:py-0 ">
-                    <p className="tabernaserif text-2xl text-center">¡Una forma diferente y divertida de comer waffles!</p>
-                    <p className="text-xl text-center ">Encontranos en Teniente Vera esquina Denis Roa</p>
-                    <p className="text-xl text-center">Lunes a Domingos - 12:00 a 20:00</p>
+                    <p className="text-2xl text-center font-extrabold">Una forma diferente y divertida de comer waffles</p>
+                    <p className="text-xl text-center font-semibold">Encontranos en Teniente Vera esquina Denis Roa</p>
+                    <p className="text-xl text-center font-semibold">Lunes a Domingos - 12:00 a 20:00</p>
                     <Link to="/nosotros" className="mt-5">
-                        <Button>Conoce más sobre nosotros</Button>
+                        <Button className="bg-guaflePink bg-opacity-80 text-white hover:scale-[1.02] focus:scale-[1.02] hover:shadow-sm">Conoce más sobre nosotros</Button>
                     </Link>
                 </div>
             </div>

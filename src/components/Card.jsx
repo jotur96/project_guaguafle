@@ -4,12 +4,13 @@ import {
     CardBody,
     CardFooter,
     Button,
+    Typography,
   } from "@material-tailwind/react";
 
    
   export function EcommerceCard({image, className}) {
     return (
-      <Card className="w-fit h-96 lg:h-64">
+      <Card className="w-auto h-96 lg:h-80 hover:scale-[1.01] focus:scale-[1.01] bg-white">
         <CardHeader shadow={false} floated={false} className="h-96">
           <img
             src={image}
@@ -18,14 +19,6 @@ import {
           />
         </CardHeader>
         {/* <CardBody>
-          <div className="mb-2 flex items-center justify-between">
-            <h1 color="blue-gray" className="font-medium">
-              Waffle
-            </h1>
-            <h1 color="blue-gray" className="font-medium">
-              $95.00
-            </h1>
-          </div>
           <h1
             color="gray"
             className="font-normal opacity-75"
@@ -33,7 +26,7 @@ import {
             Waffle con helado de esto y aquello
           </h1>
         </CardBody> */}
-        <CardFooter className="pt-0">{/* 
+        <CardFooter className="pt-0 h-0 my-0">{/* 
           <Button
             ripple={false}
             fullWidth={true}
@@ -42,6 +35,33 @@ import {
             PedidosYa!
           </Button> */}
         </CardFooter>
+      </Card>
+    );
+  }
+
+
+export function HorizontalCard({image, title, txt}) {
+    return (
+      <Card className="w-auto max-w-[48rem] flex-row h-fit md:h-screen-50">
+        <CardHeader
+          shadow={false}
+          floated={false}
+          className="m-0 w-1/2 md:w-2/5 shrink-0 rounded-r-none"
+        >
+          <img
+            src={image}
+            alt="card-image"
+            className="h-full w-full object-cover"
+          />
+        </CardHeader>
+        <CardBody>
+          <h1 className="mb-2 text-sm md:text-2xl text-left font-semibold p-1 flex-col">
+            {title}
+          </h1>
+          <p className="text-xs md:text-xl text-left p-1 flex-col">
+            {txt}
+          </p>
+        </CardBody>
       </Card>
     );
   }
