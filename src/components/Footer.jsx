@@ -18,7 +18,7 @@ export const Footer = () => {
                         </div>
                         <div className="flex flex-col justify-center items-center gap-2 pt-5">
                             <h4 className="text-2xl">Teléfono</h4>
-                            <a href="https://wa.me/595971217495" target="_blank" className="hover:text-guafleSecondary">+595 971 217 495</a>
+                            <a href="https://wa.me/595971217495" target="_blank" rel="noreferrer" className="hover:text-guafleSecondary">+595 971 217 495</a>
                         </div>
                         <div className="flex flex-col justify-center items-center gap-2 px-2 pt-5">
                             <h4 className="text-2xl">Dirección</h4>

@@ -31,11 +31,12 @@ export const Inicio = () => {
 
     return (
         <Layout>
-            <div className="w-full h-full flex flex-col items-center z-0 pt-10">
-                <div className="h-screen-50 xl:h-screen-76 w-full px-10 lg-px-20 xl:px-36">
+            <div className="w-full h-full flex flex-col items-center z-0 xl:pt-10">
+                <div className="h-screen-50 xl:h-screen-76 w-full lg:px-20 xl:px-36 
+                md:h-screen-60 lg:h-screen-60 sm:h-60 flex items-center m-0">
                     <CarouselWithContent images={imagesMenu} />
                 </div>
-                <div className="flex justify-between gap-36   px-10 lg-px-20 xl:px-36 py-10 my-10">
+                <div className="flex justify-between gap-10 px-10 lg-px-20 xl:px-36 py-10 my-10">
                     <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img2} alt="guafle" />
                     <div className="flex flex-col items-center text-center justify-center xl:text-3xl regals gap-4">
                         <p className="sm:text-sm md:text-lg lg:text-xl">VIENEN DE</p>
@@ -49,13 +50,13 @@ export const Inicio = () => {
                     </div>
                     <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img3} alt="guafle" />
                 </div>
-                <div className="bg-deep-orange-100 lg:gap-20 flex flex-col w-full pt-10">
-                    <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:px-14 xl:h-screen-50 sm:gap-20 pb-5 xl:gap-32">
-                        <div className="flex-col items-center justify-center w-96 lg:w-1/3 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img4}></EcommerceCard></div>
-                        <div className="flex-col items-center justify-center w-96 lg:w-1/3 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img5}></EcommerceCard></div>
-                        <div className="flex-col items-center justify-center w-96 lg:w-1/3 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img6}></EcommerceCard></div>
+                <div className="bg-deep-orange-100 lg:gap-5 flex flex-col w-full h-fit pb-2 pt-11">
+                    <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:px-14 xl:h-screen-50 sm:gap-20 xl:gap-32">
+                        <div className="flex-col items-center justify-center sm:w-11/12 lg:w-1/3 lg:h-56"><EcommerceCard className="h-full w-full object-cover" image={img4}></EcommerceCard></div>
+                        <div className="flex-col items-center justify-center sm:w-11/12 lg:w-1/3 lg:h-56"><EcommerceCard className="h-full w-full object-cover" image={img5}></EcommerceCard></div>
+                        <div className="flex-col items-center justify-center sm:w-11/12 lg:w-1/3 lg:h-56"><EcommerceCard className="h-full w-full object-cover" image={img6}></EcommerceCard></div>
                     </div>
-                    <div className="flex flex-row justify-center w-full xl:h-20 pb-10 xl:p-2">
+                    <div className="flex flex-row justify-center w-full xl:h-10 pb-10 xl:pb-20 sm:py-7">
                         <Link to="/menu">
                         <Button className="bg-guaflePink bg-opacity-95 text-white hover:scale-[1.02] focus:scale-[1.02] hover:shadow-sm">Nuestro menú</Button>
                         </Link>
