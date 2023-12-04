@@ -6,9 +6,9 @@ import logoBlanco from "../assets/images/logo/blanco-sin-tag.png"
 import logoNegro from "../assets/images/logo/negro-sin-tag.png"
 
 const NavItem = ({ to, children, closeMenu }) => {
-  const activeStyle = "underline underline-offset-8 font-semibold text-guafleSecondary hover:no-underline"
+  const activeStyle = "underline underline-offset-8 text-white hover:no-underline"
   return (
-    <li className="flex items-center text-black hover:text-guafleSecondary lg:text-4xl px-5 ">
+    <li className="flex items-center text-deep-orange-50 hover:text-white lg:text-3xl px-5 regals">
       <NavLink
         to={to}
         onClick={() => {
@@ -82,7 +82,7 @@ export const Nav = (props) => {
               alt="Logo"
             />
             <img
-              className="absolute top-0 object-cover object-center h-full w-full transition-opacity duration-300 hover:opacity-0"
+              className="absolute top-0 object-cover opacity-90 object-center h-full w-full transition-opacity duration-300 hover:opacity-0"
               src={logoNegro} // Imagen oculta
               alt="Logo"
             />
