@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { Layout } from "../../components/Layout";
 import { EcommerceCard } from "../../components/Card";
 import { HorizontalCard } from "../../components/Card";
@@ -27,6 +29,10 @@ export const Menu = () => {
                                     <p className="text-sm text-left py-2 flex-col">{ desc }</p>
                                 </div>
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
 
     
 
