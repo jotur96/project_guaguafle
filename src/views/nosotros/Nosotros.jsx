@@ -25,27 +25,27 @@ export const Nosotros = () => {
                         <img className="w-full h-full object-contain" src={img1} alt="Background" />
                     </div>
                     <div className="flex flex-col  items-center h-fit w-fit bg-guafleSecondary z-10 px-10 md:px-24 xl:px-48 2xl:px-80 pb-10 bg-opacity-90 ">
-                        <h2 className="text-2xl md:text-5xl xl:text-6xl 2xl:text-8xl my-10 text-guafleDark font-bold">Nuestra Historia</h2>
+                        <h2 className="text-xl text-center md:text-4xl lg:text-5xl 3xl:text-7xl my-10  text-guafleDark regals">Nuestra Historia</h2>
                         <p className="text-lg md:text-xl 2xl:text-3xl text-justify text-guafleDark">
                             Esta es nuestra historia:
-                            Nos gusta mucho movernos, ser un trotamundos girando
-                            Venimos de todas partes, y en cada lugar descubrimos un sabor único
-                            Un pequeño pedazo que nos conecta con recuerdos, personas, momentos
-                            Y esa explosión de sabores, genera una mezcla atractiva, una cultura del buen gusto
-                            Es lo lindo de ser nómada, tener sabores de todo el mundo
+                            Nos gusta mucho movernos, ser un trotamundos girando.
+                            Venimos de todas partes, y en cada lugar descubrimos un sabor único,
+                            un pequeño pedazo que nos conecta con recuerdos, personas, momentos.
+                            Esa explosión de sabores genera una mezcla atractiva, una cultura del buen gusto.
+                            Es lo lindo de ser nómada, tener sabores de todo el mundo.
                             Guaguafles, sabores de cada rincón del mundo.
                         </p>
                     </div>
                 </section>
-                <section className="flex flex-col h-ful">
+                <section className="flex flex-col h-full">
                     <div className="flex flex-col items-center h-fit w-full bg-guafleSecondary z-10 px-10 md:px-24 xl:px-48 2xl:px-80 pb-10 bg-opacity-90">
-                        <h2 className="text-2xl text-center md:text-5xl lg:text-6xl 3xl:text-8xl my-10  text-guafleDark font-bold">El nombre ¿De dónde viene?</h2>
+                        <h2 className="text-xl text-center md:text-4xl lg:text-5xl 3xl:text-7xl my-10  text-guafleDark regals">¿De dónde viene el nombre?</h2>
                         <p className="text-lg md:text-xl 2xl:text-3xl text-justify text-guafleDark">
                             En algunos lugares, Guagua, o La Guagua, es un transporte móvil, una pequeña especie de
                             combi que te mueve a todos lados, su característica es esa, la de hacerte sentir que puedes
                             estar en varios lugares. También hay una relación con la niñez, los chicos pequeños, casi
                             onomatopéyico (que suena por lo que significa) escuchar un “Guá, guá” sintiendo que
-                            alguien arranca a llorar, todo lo que tienen una linda infancia. Y un plus que encontramos: el
+                            alguien arranca a llorar, todo lo que tienen, una linda infancia. Y un plus que encontramos: el
                             GUAraní. El idioma que nos conecta a nuestra tierra, que trasciende y emociona.
                         </p>
                     </div>
