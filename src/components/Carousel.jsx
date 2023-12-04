@@ -4,7 +4,7 @@ import { Carousel, Typography, Button } from "@material-tailwind/react";
 export function CarouselWithContent({images}) {
 
     const CarouselItems = ({ img, alt }) => {
-        return <img src={img} alt={alt} className="h-full w-full object-cover"></img>
+        return <img src={img} alt={alt} className="h-full w-full object-cover xl:object-contain bg-deep-orange-100"></img>
     }
 
 

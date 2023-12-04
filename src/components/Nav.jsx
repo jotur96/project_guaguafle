@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Collapse, Typography, IconButton } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logoBlanco from "../assets/images/logo/blanco-sin-tag.png"
+import logoBlanco from "../assets/images/logo/blanco.png"
 import logoNegro from "../assets/images/logo/negro-sin-tag.png"
 
 const NavItem = ({ to, children, closeMenu }) => {
@@ -75,15 +75,15 @@ export const Nav = (props) => {
     <Navbar className="mx-auto max-w-screen-x bg-guaflePrimary py-0 fixed top-0 z-20" fullWidth="true" color="guafleOrange">
       <div className="flex items-center justify-evenly text-white">
         <div className="relative h-20 md:h-20 xl:h-24 w-36 md:w-44 top-0   ">
-          <a href="/">
+          <a href="/">{/* 
             <img
-              className="absolute top-0 object-cover object-center h-full w-full transition-opacity duration-300"
+              className="absolute top-0 object-cover object-center h-full w-full hover-opacity-70 duration-300"
               src={logoBlanco} // Imagen visible
               alt="Logo"
-            />
+            /> */}
             <img
-              className="absolute top-0 object-cover opacity-90 object-center h-full w-full transition-opacity duration-300 hover:opacity-0"
-              src={logoNegro} // Imagen oculta
+              className="absolute top-0 object-cover opacity-80 object-center h-full w-full transition-opacity duration-300 hover:opacity-100"
+              src={logoBlanco} // Imagen oculta
               alt="Logo"
             />
           </a>

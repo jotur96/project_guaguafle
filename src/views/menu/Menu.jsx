@@ -23,8 +23,8 @@ export const Menu = () => {
     const MenuDesc = ({ item, precio, desc }) => {
         return <div className="items-center w-full flex-col">
                                     <div className="flex items-center w-full flex-row justify-between">
-                                        <p className="text-xl sm:text-sm text-left font-semibold py-2 flex-col">{ item }</p>
-                                        <p className="text-xl sm:text-sm text-right font-semibold py-2 flex-col">{ precio }</p>
+                                        <p className="xl:text-xl sm:text-sm text-left font-semibold py-2 flex-col">{ item }</p>
+                                        <p className="xl:text-xl sm:text-sm text-right font-semibold py-2 flex-col">{ precio }</p>
                                     </div>
                                     <p className="text-sm text-left py-2 flex-col">{ desc }</p>
                                 </div>
@@ -45,7 +45,7 @@ export const Menu = () => {
                 </div>
 
                 <div className="flex flex-col lg:flex-row justify-center w-full xl:h-fit
-                sm:gap-6 xl:gap-16 lg:px-16 sm:w-11/12 my-5">
+                sm:gap-6 xl:gap-12 lg:px-16 sm:w-11/12 my-5">
 
                         <div className="items-center justify-center xl:w-1/3 h-fit sm:py-5">
                                 <EcommerceCard className="h-full w-full object-cover" image={img1}></EcommerceCard>
@@ -103,7 +103,7 @@ export const Menu = () => {
                     <div className="flex flex-col lg:flex-row justify-center w-full xl:h-fit
                     sm:gap-10 xl:gap-20 xl:px-20 sm:w-11/12 py-5 bg-deep-orange-100">
 
-                    <div className="items-center justify-center xl:w-1/2 h-fit sm:py-5 xl:px-10 bg-deep-orange-100">
+                    <div className="items-center justify-center xl:w-2/3 h-fit sm:py-5 xl:px-10 bg-deep-orange-100">
                         <MenuDesc item={"Guafle Caprese"} precio={"Gs. 30.000"} desc={"Muzzarella, tomates"}></MenuDesc>
                         <MenuDesc item={"Guafle con Omelette, jamón y queso"} precio={"Gs. 30.000"} desc={"Omelettes, jamón, queso catupiry"}></MenuDesc>
                         <MenuDesc item={"Guafle Butifarra con Salsa de Ajo"} precio={"Gs. 30.000"} desc={"Butifarra, salsa de ajo"}></MenuDesc>

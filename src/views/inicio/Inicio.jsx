@@ -5,6 +5,8 @@ import { CarouselWithContent } from "../../components/Carousel";
 import { EcommerceCard } from "../../components/Card";
 
 import img0 from "../../assets/images/inicio-images/guaguafle.png"
+import img00 from "../../assets/images/inicio-images/guaguafle2.png"
+import img000 from "../../assets/images/inicio-images/guaguafle3.png"
 import img1 from "../../assets/images/inicio-images/1.jpg"
 import img2 from "../../assets/images/inicio-images/2.jpg"
 import img3 from "../../assets/images/inicio-images/3.jpg"
@@ -20,12 +22,17 @@ export const Inicio = () => {
         {
             id: 1,
             img: img0,
-            alt: "Elegí tu masa"
+            alt: "Pasá & probá!"
         },
         {
             id: 2,
-            img: img0,
+            img: img000,
             alt: "Elegí tu masa"
+        },
+        {
+            id: 1,
+            img: img00,
+            alt: "Pasá & probá!"
         }
     ]
 
@@ -50,13 +57,13 @@ export const Inicio = () => {
                     </div>
                     <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img3} alt="guafle" />
                 </div>
-                <div className="bg-deep-orange-100 lg:gap-5 flex flex-col w-full h-fit pb-2 pt-11">
+                <div className="bg-deep-orange-100 lg:gap-5 flex flex-col w-full h-fit pb-2 pt-2">
                     <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:px-14 xl:h-screen-50 sm:gap-20 xl:gap-32">
                         <div className="flex-col items-center justify-center sm:w-11/12 lg:w-1/3 lg:h-56"><EcommerceCard className="h-full w-full object-cover" image={img4}></EcommerceCard></div>
                         <div className="flex-col items-center justify-center sm:w-11/12 lg:w-1/3 lg:h-56"><EcommerceCard className="h-full w-full object-cover" image={img5}></EcommerceCard></div>
                         <div className="flex-col items-center justify-center sm:w-11/12 lg:w-1/3 lg:h-56"><EcommerceCard className="h-full w-full object-cover" image={img6}></EcommerceCard></div>
                     </div>
-                    <div className="flex flex-row justify-center w-full xl:h-10 pb-10 xl:pb-20 sm:py-7">
+                    <div className="flex flex-row justify-center w-full xl:h-10 pb-10 xl:py-16 sm:py-7">
                         <Link to="/menu">
                         <Button className="bg-guaflePink bg-opacity-95 text-white hover:scale-[1.02] focus:scale-[1.02] hover:shadow-sm">Nuestro menú</Button>
                         </Link>
