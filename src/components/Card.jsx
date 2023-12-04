@@ -10,7 +10,7 @@ import {
    
   export function EcommerceCard({image, className}) {
     return (
-      <Card className="w-auto h-96 sm-h lg:h-80 hover:scale-[1.01] focus:scale-[1.01] bg-white">
+      <Card className="w-auto h-96 lg:h-80 hover:scale-[1.01] focus:scale-[1.01] bg-white">
         <CardHeader shadow={false} floated={false} className="h-96">
           <img
             src={image}

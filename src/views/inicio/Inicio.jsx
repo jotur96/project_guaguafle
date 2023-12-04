@@ -49,15 +49,17 @@ export const Inicio = () => {
                     </div>
                     <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img3} alt="guafle" />
                 </div>
-                <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:px-14 xl:h-screen-50 sm:gap-20 pb-5 lg:bg-deep-orange-100 xl:gap-32">
-                    <div className="flex-col items-center justify-center w-96 lg:w-1/3 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img4}></EcommerceCard></div>
-                    <div className="flex-col items-center justify-center w-96 lg:w-1/3 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img5}></EcommerceCard></div>
-                    <div className="flex-col items-center justify-center w-96 lg:w-1/3 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img6}></EcommerceCard></div>
-                </div>
-                <div className="flex flex-row justify-center w-full xl:h-20 py-20 xl:p-2  lg:bg-deep-orange-200">
-                    <Link to="/menu">
+                <div className="bg-deep-orange-100 lg:gap-20 flex flex-col w-full pt-10">
+                    <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:px-14 xl:h-screen-50 sm:gap-20 pb-5 xl:gap-32">
+                        <div className="flex-col items-center justify-center w-96 lg:w-1/3 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img4}></EcommerceCard></div>
+                        <div className="flex-col items-center justify-center w-96 lg:w-1/3 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img5}></EcommerceCard></div>
+                        <div className="flex-col items-center justify-center w-96 lg:w-1/3 lg:h-56 sm:py-5"><EcommerceCard className="h-full w-full object-cover" image={img6}></EcommerceCard></div>
+                    </div>
+                    <div className="flex flex-row justify-center w-full xl:h-20 pb-10 xl:p-2">
+                        <Link to="/menu">
                         <Button className="bg-guaflePink bg-opacity-95 text-white hover:scale-[1.02] focus:scale-[1.02] hover:shadow-sm">Nuestro menú</Button>
-                    </Link>
+                        </Link>
+                    </div>
                 </div>
                 <div className="flex flex-col items-center justify-center xl:w-1/2 2xl:w-fit xl:h-screen-50 gap-6 my-10 pb-20 lg:py-0 ">
                     <p className="text-2xl text-center font-extrabold">Una forma diferente y divertida de comer waffles</p>
