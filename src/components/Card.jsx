@@ -42,11 +42,11 @@ import {
 
 export function HorizontalCard({image, title, txt}) {
     return (
-      <Card className="w-auto max-w-[48rem] flex-row h-screen-50">
+      <Card className="w-auto max-w-[48rem] flex-row h-fit md:h-screen-50">
         <CardHeader
           shadow={false}
           floated={false}
-          className="m-0 w-2/5 shrink-0 rounded-r-none"
+          className="m-0 w-1/2 md:w-2/5 shrink-0 rounded-r-none"
         >
           <img
             src={image}
@@ -55,10 +55,10 @@ export function HorizontalCard({image, title, txt}) {
           />
         </CardHeader>
         <CardBody>
-          <h1 className="mb-2 text-xl text-left font-semibold p-1 flex-col">
+          <h1 className="mb-2 text-sm md:text-2xl text-left font-semibold p-1 flex-col">
             {title}
           </h1>
-          <p className="text-md text-left p-1 flex-col">
+          <p className="text-xs md:text-xl text-left p-1 flex-col">
             {txt}
           </p>
         </CardBody>
