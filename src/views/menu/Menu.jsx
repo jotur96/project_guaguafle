@@ -29,6 +29,10 @@ export const Menu = () => {
         </div>
     }
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
+
 
 
 
