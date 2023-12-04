@@ -21,13 +21,16 @@ export const Menu = () => {
     const MenuDesc = ({ item, precio, desc }) => {
         return <div className="items-center w-full flex-col">
             <div className="flex items-center w-full flex-row justify-between">
-                <p className="text-xl text-left font-semibold py-2 flex-col">{item}</p>
-                <p className="text-xl text-right font-semibold py-2 flex-col">{precio}</p>
+                <p className="text-xl sm:text-sm text-left font-semibold py-2 flex-col">{item}</p>
+                <p className="text-xl sm:text-sm text-right font-semibold py-2 flex-col">{precio}</p>
             </div>
             <p className="text-sm text-left py-2 flex-col">{desc}</p>
         </div>
     }
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
 
 
     return (
@@ -39,9 +42,9 @@ export const Menu = () => {
                 </div>
 
                 <div className="flex flex-col lg:flex-row justify-center w-full xl:h-fit
-                sm:gap-20 xl:gap-20 px-5 md:px-20 my-5">
+                sm:gap-6 xl:gap-16 lg:px-16 sm:w-11/12 my-5">
 
-                    <div className="items-center justify-center w-full md:w-1/3 h-fit py-5">
+                    <div className="items-center justify-center xl:w-1/3 h-fit sm:py-5">
                         <EcommerceCard className="h-full w-full object-cover" image={img1}></EcommerceCard>
                         <p className="text-2xl text-center regals py-4">Masas</p>
                         <MenuDesc item={"Básica - Grande"} precio={"Gs. 30.000"}></MenuDesc>
@@ -50,7 +53,8 @@ export const Menu = () => {
                         <MenuDesc item={"Chips de Chocolate - Chica"} precio={"Gs. 27.000"}></MenuDesc>
                     </div>
 
-                    <div className="items-center justify-center w-full md:w-1/3 h-fit sm:py-5">
+
+                    <div className="items-center justify-center xl:w-1/3 h-fit sm:py-5">
                         <EcommerceCard className="h-full w-full object-cover" image={img2}></EcommerceCard>
                         <p className="text-2xl text-center regals py-4">Sabores de helado</p>
                         <MenuDesc item={"Chocolate"}></MenuDesc>
@@ -59,7 +63,7 @@ export const Menu = () => {
                         <MenuDesc item={"Frutilla"}></MenuDesc>
                     </div>
 
-                    <div className="items-center justify-center w-full md:w-1/3 h-fit sm:py-5">
+                    <div className="items-center justify-center xl:w-1/3 h-fit sm:py-5">
                         <EcommerceCard className="h-full w-full object-cover" image={img3}></EcommerceCard>
                         <p className="text-2xl text-center regals py-4">Toppings</p>
                         <MenuDesc item={"Oreos"}></MenuDesc>
@@ -71,38 +75,43 @@ export const Menu = () => {
 
                 </div>
 
-                <div className="flex flex-row items-center justify-center w-full h-fit bg-deep-orange-100">
-                    <p className="regals text-4xl text-center py-2 pt-10">Opciones Saladas</p>
-                </div>
-
-                <div className="flex flex-col lg:flex-row justify-center w-full xl:h-fit
-                sm:gap-20 xl:gap-20 px-5 md:px-20 py-5 bg-deep-orange-100">
-
-                    <div className="items-center justify-center w-ful md:w-1/3 h-fit py-5">
-                        <EcommerceCard className="h-full w-full object-cover" image={salado1}></EcommerceCard>
+                <div className="bg-deep-orange-100 lg:gap-5 flex flex-col w-full h-fit justify-center items-center">
+                    <div className="flex flex-col lg:flex-row justify-center w-full xl:h-fit
+                        sm:gap-6 xl:gap-16 lg:px-16 sm:w-11/12 py-5">
+                        <p className="regals text-4xl text-center py-2 pt-10 sm:px-5">¡Probá nuestras opciones saladas!</p>
                     </div>
 
-                    <div className="items-center justify-center w-full md:w-1/3 h-fit py-5">
-                        <EcommerceCard className="h-full w-full object-cover" image={salado2}></EcommerceCard>
-                    </div>
+                    <div className="flex flex-col lg:flex-row justify-center items-center w-full xl:h-fit
+                        sm:gap-6 xl:gap-16 lg:px-16 sm:w-11/12 my-5">
+
+                        <div className="items-center justify-center xl:w-1/3 h-fit sm:py-5">
+                            <EcommerceCard className="h-full w-full object-cover" image={salado1}></EcommerceCard>
+                        </div>
+
+                        <div className="items-center justify-center xl:w-1/3 h-fit sm:py-5">
+                            <EcommerceCard className="h-full w-full object-cover" image={salado2}></EcommerceCard>
+                        </div>
+
+                        <div className="items-center justify-center xl:w-1/3 h-fit sm:py-5">
+                            <EcommerceCard className="h-full w-full object-cover" image={salado3}></EcommerceCard>
+                        </div>
 
                     <div className="items-center justify-center w-full md:w-1/3 h-fit py-5">
                         <EcommerceCard className="h-full w-full object-cover" image={salado3}></EcommerceCard>
                     </div>
 
-                </div>
+                    <div className="flex flex-col lg:flex-row justify-center w-full xl:h-fit
+                    sm:gap-10 xl:gap-20 xl:px-20 sm:w-11/12 py-5 bg-deep-orange-100">
 
-                <div className="flex flex-col lg:flex-row justify-center w-full xl:h-fit
-                    sm:gap-20 xl:gap-20 px-5 md:px-20 py-5 bg-deep-orange-100">
-
-                    <div className="items-center justify-center md-full md:w-1/2 h-fit sm:py-5 md:px-10 bg-deep-orange-100">
-                        <MenuDesc item={"Guafle Caprese"} precio={"Gs. 30.000"} desc={"Muzzarella, tomates"}></MenuDesc>
-                        <MenuDesc item={"Guafle con Omelette, jamón y queso"} precio={"Gs. 30.000"} desc={"Omelettes, jamón, queso catupiry"}></MenuDesc>
-                        <MenuDesc item={"Guafle Butifarra con Salsa de Ajo"} precio={"Gs. 30.000"} desc={"Butifarra, salsa de ajo"}></MenuDesc>
-                        <MenuDesc item={"Guafle con Pollo y Queso Catupiry"} precio={"Gs. 30.000"} desc={"Pollo, queso catupiry"}></MenuDesc>
-                        <MenuDesc item={"Guafle con Pancho, Papitas y Aderezos"} precio={"Gs. 30.000"} desc={"Salsa de tomate, pancho, papitas"}></MenuDesc>
-                        <br />
-                        <MenuDesc item={"Salsa adicional"} precio={"Gs. 2.000"} desc={"Ajo picante, ketchup, mayonesa, mostaza, chimichurri, salsa de ajo de la casa"}></MenuDesc>
+                        <div className="items-center justify-center xl:w-1/2 h-fit sm:py-5 xl:px-10 bg-deep-orange-100">
+                            <MenuDesc item={"Guafle Caprese"} precio={"Gs. 30.000"} desc={"Muzzarella, tomates"}></MenuDesc>
+                            <MenuDesc item={"Guafle con Omelette, jamón y queso"} precio={"Gs. 30.000"} desc={"Omelettes, jamón, queso catupiry"}></MenuDesc>
+                            <MenuDesc item={"Guafle Butifarra con Salsa de Ajo"} precio={"Gs. 30.000"} desc={"Butifarra, salsa de ajo"}></MenuDesc>
+                            <MenuDesc item={"Guafle con Pollo y Queso Catupiry"} precio={"Gs. 30.000"} desc={"Pollo, queso catupiry"}></MenuDesc>
+                            <MenuDesc item={"Guafle con Pancho, Papitas y Aderezos"} precio={"Gs. 30.000"} desc={"Salsa de tomate, pancho, papitas"}></MenuDesc>
+                            <br />
+                            <MenuDesc item={"Salsa adicional"} precio={"Gs. 2.000"} desc={"Ajo picante, ketchup, mayonesa, mostaza, chimichurri, salsa de ajo de la casa"}></MenuDesc>
+                        </div>
                     </div>
 
                 </div>
@@ -111,8 +120,8 @@ export const Menu = () => {
                     <p className="regals text-4xl text-center py-2 pt-10">Destacados</p>
                 </div>
 
-                <div className="flex flex-col justify-center items-center w-full xl:h-fit gap-10
-                    md:gap-20 xl:gap-20 px-5 md:px-20 my-5">
+                <div className="flex flex-col justify-center items-center w-full xl:h-fit
+                    sm:gap-20 xl:gap-20 sm:w-11/12 xl:px-20 my-5">
                     <HorizontalCard image={destacado1}
                         title={"Waffle con helado de chocolate"}
                         txt={"Masa crocante y calentita rellena de helado de chocolate acompañado con rocklets."}>
@@ -127,9 +136,6 @@ export const Menu = () => {
                         title={"Waffle con helado de crema americana"}
                         txt={"Waffle relleno de helado de crema americana con frutillas y un toque de granola por encima."}>
                     </HorizontalCard>
-                    <a href="https://www.pedidosya.com.py/restaurantes/asuncion/Guaguafle-menu?search=guaguafle" target="blank">
-                        <Button className="bg-guaflePink bg-opacity-80 text-white hover:scale-[1.02] focus:scale-[1.02] hover:shadow-sm">PedidosYa</Button>
-                    </a>
                 </div>
 
             </div>
