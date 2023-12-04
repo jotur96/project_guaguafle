@@ -18,6 +18,7 @@ import destacado4 from "../../assets/images/menu-images/frutilla.jpg"
 
 export const Menu = () => {
 
+    //menu fix    
     const MenuDesc = ({ item, precio, desc }) => {
         return <div className="items-center w-full flex-col">
             <div className="flex items-center w-full flex-row justify-between">
