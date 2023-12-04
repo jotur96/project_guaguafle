@@ -42,7 +42,7 @@ import {
 
 export function HorizontalCard({image, title, txt}) {
     return (
-      <Card className="w-auto max-w-[48rem] flex-row h-screen-50">
+      <Card className="w-auto max-w-[48rem] flex-row h-screen-50 sm:h-fit">
         <CardHeader
           shadow={false}
           floated={false}
