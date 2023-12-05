@@ -47,7 +47,7 @@ export const Inicio = () => {
                     <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img2} alt="guafle" />
                     <div className="flex flex-col items-center text-center justify-center xl:text-3xl regals gap-4">
                         <p className="sm:text-sm md:text-lg lg:text-xl">VIENEN DE</p>
-                        <p className="sm:text-3xl md:text-4xl">FRANCIA</p>
+                        <p className="sm:text-3xl md:text-4xl">HONG KONG</p>
                         <p className="sm:text-sm md:text-lg lg:text-xl">PARECEN DE</p> 
                         <p className="sm:text-3xl md:text-4xl">ESTADOS UNIDOS</p>
                         <p className="sm:text-sm md:text-lg lg:text-xl">CON RECETA DE</p>
@@ -57,19 +57,19 @@ export const Inicio = () => {
                     </div>
                     <img className="hidden lg:block w-1/4 object-cover rounded-xl shadow-xl" src={img3} alt="guafle" />
                 </div>
-                <div className="bg-deep-orange-100 lg:gap-5 flex flex-col w-full h-fit pb-2 pt-2">
+                <div className="bg-deep-orange-100 lg:gap-5 flex flex-col w-full h-fit pb-2 sm:pt-10">
                     <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:px-14 xl:h-screen-50 sm:gap-20 xl:gap-32">
-                        <div className="flex-col items-center justify-center sm:w-11/12 lg:w-1/3 lg:h-56"><EcommerceCard className="h-full w-full object-cover" image={img4}></EcommerceCard></div>
-                        <div className="flex-col items-center justify-center sm:w-11/12 lg:w-1/3 lg:h-56"><EcommerceCard className="h-full w-full object-cover" image={img5}></EcommerceCard></div>
-                        <div className="flex-col items-center justify-center sm:w-11/12 lg:w-1/3 lg:h-56"><EcommerceCard className="h-full w-full object-cover" image={img6}></EcommerceCard></div>
+                        <div className="flex-col items-center justify-center sm:w-11/12 lg:w-1/3 lg:h-fit"><EcommerceCard className="h-full w-full object-cover" image={img4}></EcommerceCard></div>
+                        <div className="flex-col items-center justify-center sm:w-11/12 lg:w-1/3 lg:h-fit"><EcommerceCard className="h-full w-full object-cover" image={img5}></EcommerceCard></div>
+                        <div className="flex-col items-center justify-center sm:w-11/12 lg:w-1/3 lg:h-fit"><EcommerceCard className="h-full w-full object-cover" image={img6}></EcommerceCard></div>
                     </div>
-                    <div className="flex flex-row justify-center w-full xl:h-10 pb-10 xl:py-16 sm:py-7">
+                    <div className="flex flex-row justify-center w-full xl:h-10 pb-10 xl:pb-16 sm:py-7">
                         <Link to="/menu">
                         <Button className="bg-guaflePink bg-opacity-95 text-white hover:scale-[1.02] focus:scale-[1.02] hover:shadow-sm">Nuestro menú</Button>
                         </Link>
                     </div>
                 </div>
-                <div className="flex flex-col items-center justify-center xl:w-1/2 2xl:w-fit xl:h-screen-50 gap-6 my-10 pb-20 lg:py-0 ">
+                <div className="flex flex-col items-center justify-center xl:w-1/2 2xl:w-fit xl:h-screen-50 gap-6 my-10 pb-20 lg:py-0 sm:px-3">
                     <p className="text-2xl text-center font-extrabold">Una forma diferente y divertida de comer waffles</p>
                     <p className="text-xl text-center font-semibold">Encontranos en Teniente Vera esquina Denis Roa</p>
                     <p className="text-xl text-center font-semibold">Lunes a Domingos - 12:00 a 20:00</p>
